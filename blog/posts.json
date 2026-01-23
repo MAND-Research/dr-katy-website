@@ -1,0 +1,75 @@
+{
+  "posts": [
+    {
+      "slug": "understanding-your-thyroid",
+      "title": "Understanding Your Thyroid: What the Labs Don't Tell You",
+      "date": "2026-01-15",
+      "category": "hormones",
+      "categoryLabel": "Hormones",
+      "excerpt": "Why 'normal' thyroid labs don't always mean your thyroid is functioning well, and what to look for instead.",
+      "image": "images/midcoast-health-session-II-47.jpg",
+      "imageAlt": "Post thumbnail"
+    },
+    {
+      "slug": "gut-health-matters",
+      "title": "Why Your Gut Health Matters More Than You Think",
+      "date": "2026-01-08",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "The connection between your digestive system and everything from mood to immunity.",
+      "image": "images/midcoast-health-collective-4-5.jpg",
+      "imageAlt": "Post thumbnail"
+    },
+    {
+      "slug": "3pm-crash",
+      "title": "The 3pm Crash: What Your Body Is Trying to Tell You",
+      "date": "2025-12-20",
+      "category": "energy",
+      "categoryLabel": "Energy",
+      "excerpt": "That afternoon slump isn't just about sleep. Here's what's really going on.",
+      "image": "images/midcoast-health-collective-4-75.jpg",
+      "imageAlt": "Post thumbnail"
+    },
+    {
+      "slug": "beyond-manage-your-stress",
+      "title": "Beyond 'Manage Your Stress': What Actually Helps",
+      "date": "2025-12-12",
+      "category": "stress",
+      "categoryLabel": "Stress",
+      "excerpt": "Moving past generic advice to interventions that work for real life.",
+      "image": "images/midcoast-health-session-I-37.jpg",
+      "imageAlt": "Post thumbnail"
+    },
+    {
+      "slug": "cant-sleep",
+      "title": "Can't Sleep? It Might Not Be What You Think",
+      "date": "2025-12-05",
+      "category": "sleep",
+      "categoryLabel": "Sleep",
+      "excerpt": "Common sleep disruptors that have nothing to do with screen time or caffeine.",
+      "image": "images/midcoast-health-session-III-24.jpg",
+      "imageAlt": "Post thumbnail"
+    },
+    {
+      "slug": "first-naturopathic-visit",
+      "title": "What to Expect at Your First Naturopathic Visit",
+      "date": "2025-11-28",
+      "category": "integrative-medicine",
+      "categoryLabel": "Integrative Medicine",
+      "excerpt": "A guide to the intake process and what makes naturopathic appointments different.",
+      "image": "images/midcoast-health-collective-4-101.jpg",
+      "imageAlt": "Post thumbnail"
+    }
+  ],
+  "categories": [
+    { "id": "hormones", "label": "Hormones" },
+    { "id": "digestion", "label": "Digestion" },
+    { "id": "energy", "label": "Energy" },
+    { "id": "stress", "label": "Stress" },
+    { "id": "sleep", "label": "Sleep" },
+    { "id": "integrative-medicine", "label": "Integrative Medicine" }
+  ],
+  "config": {
+    "postsPerPage": 9
+  }
+}
