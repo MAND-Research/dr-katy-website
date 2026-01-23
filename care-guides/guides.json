@@ -1,0 +1,114 @@
+{
+  "guides": [
+    {
+      "slug": "what-to-expect-first-visit",
+      "title": "What to Expect at Your First Visit",
+      "category": "getting-started",
+      "categoryLabel": "Getting Started",
+      "excerpt": "Everything you need to know before your first appointment.",
+      "icon": "user",
+      "audience": ["new-patients"]
+    },
+    {
+      "slug": "how-to-begin-care",
+      "title": "How to Begin Care with Dr. Katy",
+      "category": "getting-started",
+      "categoryLabel": "Getting Started",
+      "excerpt": "Why I offer a program, not one-off visits, and how to get started.",
+      "icon": "user",
+      "audience": ["new-patients"]
+    },
+    {
+      "slug": "lab-testing",
+      "title": "Our Approach to Lab Testing",
+      "category": "visits",
+      "categoryLabel": "Visits",
+      "excerpt": "How lab testing works within your care plan.",
+      "icon": "beaker",
+      "audience": ["new-patients", "returning-patients"]
+    },
+    {
+      "slug": "lab-results-communication",
+      "title": "Understanding Your Lab Results",
+      "category": "visits",
+      "categoryLabel": "Visits",
+      "excerpt": "How we communicate and interpret your lab results.",
+      "icon": "clipboard",
+      "audience": ["new-patients", "returning-patients"]
+    },
+    {
+      "slug": "insurance-billing",
+      "title": "Why I Don't Bill Insurance Directly",
+      "category": "billing",
+      "categoryLabel": "Billing",
+      "excerpt": "How billing works, superbills, and submitting for reimbursement.",
+      "icon": "currency",
+      "audience": ["new-patients", "returning-patients"]
+    },
+    {
+      "slug": "understanding-payments",
+      "title": "Understanding Program Payments",
+      "category": "billing",
+      "categoryLabel": "Billing",
+      "excerpt": "Payment plans, schedules, and HSA documentation.",
+      "icon": "currency",
+      "audience": ["new-patients", "returning-patients"]
+    },
+    {
+      "slug": "refund-policy",
+      "title": "Refund Policy",
+      "category": "policies",
+      "categoryLabel": "Policies",
+      "excerpt": "Our policies on refunds for services, supplements, and programs.",
+      "icon": "clipboard",
+      "audience": ["new-patients", "returning-patients"]
+    },
+    {
+      "slug": "program-timeline-renewal",
+      "title": "Elemental Care Timeline and Renewal",
+      "category": "policies",
+      "categoryLabel": "Policies",
+      "excerpt": "How your program year works and what happens at renewal.",
+      "icon": "calendar",
+      "audience": ["returning-patients"]
+    },
+    {
+      "slug": "messaging-guidelines",
+      "title": "Between Visits: Messaging Guidelines",
+      "category": "resources",
+      "categoryLabel": "Resources",
+      "excerpt": "When to message and when to schedule a visit.",
+      "icon": "computer",
+      "audience": ["returning-patients"]
+    },
+    {
+      "slug": "elemental-care-faqs",
+      "title": "Elemental Care FAQs",
+      "category": "getting-started",
+      "categoryLabel": "Getting Started",
+      "excerpt": "Common questions about the Elemental Care program.",
+      "icon": "clipboard",
+      "audience": ["new-patients", "returning-patients"]
+    },
+    {
+      "slug": "a-la-carte-visits",
+      "title": "Understanding À La Carte Visits",
+      "category": "visits",
+      "categoryLabel": "Visits",
+      "excerpt": "How single visits work outside of a care program.",
+      "icon": "calendar",
+      "audience": ["returning-patients"]
+    }
+  ],
+  "categories": [
+    { "id": "getting-started", "label": "Getting Started" },
+    { "id": "visits", "label": "Visits" },
+    { "id": "billing", "label": "Billing" },
+    { "id": "policies", "label": "Policies" },
+    { "id": "resources", "label": "Resources" }
+  ],
+  "audiences": [
+    { "id": "new-patients", "label": "New Patients" },
+    { "id": "returning-patients", "label": "Returning Patients" }
+  ]
+}

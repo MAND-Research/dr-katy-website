@@ -3042,3 +3042,390 @@ footer {
         height: 120px;
     }
 }
+
+
+/* ========================================
+   RESOURCES PAGE
+   ======================================== */
+
+.resources {
+    padding: calc(100px + var(--section-padding)) var(--content-padding) var(--section-padding);
+    background-color: var(--cream);
+}
+
+.resources-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.resources h1 {
+    font-family: var(--font-serif);
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 1rem;
+}
+
+.resources-intro {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--near-black);
+    margin-bottom: 2.5rem;
+}
+
+.resources-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.resources-link-item {
+    display: block;
+    padding: 1.5rem 2rem;
+    border: 1px solid rgba(39, 38, 38, 0.15);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: border-color 0.2s ease;
+}
+
+.resources-link-item:hover {
+    border-color: var(--olive);
+}
+
+.resources-link-title {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 0.25rem;
+}
+
+.resources-link-desc {
+    display: block;
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: var(--near-black);
+}
+
+/* Care Guides Section */
+.care-guides {
+    padding: var(--section-padding) var(--content-padding);
+    background-color: var(--cream);
+}
+
+.care-guides-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.care-guides .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--burnt-orange);
+    margin-bottom: 0.75rem;
+}
+
+.care-guides h2 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 2.5rem;
+}
+
+.care-guides-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.care-guide-card {
+    text-decoration: none;
+    display: block;
+}
+
+.care-guide-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: var(--radius);
+    background-color: var(--sage);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.care-guide-card:hover .care-guide-icon {
+    background-color: var(--olive);
+}
+
+.care-guide-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--olive);
+    transition: color 0.2s ease;
+}
+
+.care-guide-card:hover .care-guide-icon svg {
+    color: var(--cream);
+}
+
+.care-guide-content h3 {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--near-black);
+    transition: color 0.2s ease;
+}
+
+.care-guide-card:hover .care-guide-content h3 {
+    color: var(--olive);
+}
+
+.care-guides-link {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.care-guides-link a {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--burnt-orange);
+    text-decoration: none;
+}
+
+.care-guides-link a:hover {
+    color: var(--olive);
+}
+
+/* Resources Contact */
+.resources-contact {
+    padding: 3rem var(--content-padding) var(--section-padding);
+    background-color: var(--cream);
+}
+
+.resources-contact-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(39, 38, 38, 0.15);
+}
+
+.resources-contact p {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--near-black);
+}
+
+.resources-contact a {
+    color: var(--burnt-orange);
+    text-decoration: none;
+}
+
+.resources-contact a:hover {
+    color: var(--olive);
+}
+
+@media (max-width: 768px) {
+    .resources {
+        padding: calc(80px + 3rem) 2rem 3rem;
+    }
+
+    .resources h1 {
+        font-size: 2.25rem;
+    }
+
+    .care-guides {
+        padding: 3rem 2rem;
+    }
+
+    .care-guides h2 {
+        font-size: 1.75rem;
+    }
+
+    .care-guides-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .resources-contact {
+        padding: 2rem 2rem 3rem;
+    }
+}
+
+
+/* ========================================
+   CARE GUIDES INDEX PAGE
+   ======================================== */
+
+.care-guides-header {
+    background-color: var(--cream);
+    padding: calc(100px + var(--section-padding)) var(--content-padding) 2.5rem;
+    text-align: center;
+}
+
+.care-guides-header h1 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 1rem;
+}
+
+.care-guides-header p {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: var(--near-black);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.care-guides-filters {
+    background-color: var(--cream);
+    padding: 0 var(--content-padding) 2.5rem;
+}
+
+.care-guides-filters-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.care-guides-grid-section {
+    background-color: var(--cream);
+    padding: 0 var(--content-padding) var(--section-padding);
+}
+
+.care-guides-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+/* Care Guide Card (index page version) */
+.care-guides-grid .care-guide-card {
+    text-decoration: none;
+    display: block;
+}
+
+.care-guides-grid .care-guide-icon {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: var(--radius);
+    background-color: var(--sage);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    transition: background-color 0.2s ease;
+}
+
+.care-guides-grid .care-guide-card:hover .care-guide-icon {
+    background-color: var(--olive);
+}
+
+.care-guides-grid .care-guide-icon svg {
+    width: 48px;
+    height: 48px;
+    color: var(--olive);
+    transition: color 0.2s ease;
+}
+
+.care-guides-grid .care-guide-card:hover .care-guide-icon svg {
+    color: var(--cream);
+}
+
+.care-guides-grid .care-guide-content {
+    padding: 0 0.25rem;
+}
+
+.care-guide-category {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--burnt-orange);
+    margin-bottom: 0.5rem;
+}
+
+.care-guide-title {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.35;
+    color: var(--near-black);
+    margin-bottom: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.care-guides-grid .care-guide-card:hover .care-guide-title {
+    color: var(--olive);
+}
+
+.care-guide-excerpt {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--near-black);
+    opacity: 0.8;
+}
+
+.no-guides {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--near-black);
+    opacity: 0.7;
+    padding: 3rem 0;
+}
+
+@media (max-width: 900px) {
+    .care-guides-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .care-guides-header {
+        padding: calc(80px + 3rem) 2rem 2rem;
+    }
+
+    .care-guides-header h1 {
+        font-size: 2.25rem;
+    }
+
+    .care-guides-filters {
+        padding: 0 2rem 2rem;
+    }
+
+    .care-guides-grid-section {
+        padding: 0 2rem 3rem;
+    }
+
+    .care-guides-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .care-guide-title {
+        font-size: 1.1rem;
+    }
+}
