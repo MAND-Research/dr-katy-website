@@ -1,1 +1,12 @@
 .DS_Store
+
+# Reference materials (not part of live site)
+Website Inspo/
+test-hero/
+
+# Project notes (keep locally, not needed for site)
+*-copy.md
+session-summary*.md
+
+# Zip files (fonts already extracted)
+*.zip
