@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav>
-        <a href="/" class="nav-logo">Dr. Katy Morrison</a>
+        <a href="/" class="nav-logo"><img src="images/logos/logo.png" alt="Dr. Katy Morrison"></a>
         <ul class="nav-links">
             <li><a href="/about">About</a></li>
             <li class="nav-dropdown">
@@ -68,7 +68,7 @@
             <div class="care-guides-grid" id="resources-care-guides">
                 <!-- Loaded dynamically from JSON -->
             </div>
-            <p class="care-guides-link"><a href="/care-guides">View all care guides</a></p>
+            <p class="care-guides-link"><a href="/care-guide">View all care guides</a></p>
         </div>
     </section>
 
@@ -84,7 +84,7 @@
         <div class="footer-inner">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <p class="footer-logo">Dr. Katy Morrison</p>
+                    <img src="images/logos/logo.png" alt="Dr. Katy Morrison" class="footer-logo">
                     <p class="footer-tagline">Integrative medicine for midlife women. Naturopathic care and acupuncture in Rockland, Maine.</p>
                 </div>
                 <div class="footer-links">
@@ -156,14 +156,14 @@
         };
 
         // Load care guides for returning patients
-        fetch('/care-guides/guides.json')
+        fetch('/care-guide/guides.json')
             .then(response => response.json())
             .then(data => {
                 const guides = data.guides.filter(g => g.audience.includes('returning-patients'));
                 const container = document.getElementById('resources-care-guides');
 
                 container.innerHTML = guides.map(guide => `
-                    <a href="/care-guides/${guide.slug}" class="care-guide-card">
+                    <a href="/care-guide/${guide.slug}" class="care-guide-card">
                         <div class="care-guide-icon">
                             ${icons[guide.icon] || icons.clipboard}
                         </div>

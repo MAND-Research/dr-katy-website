@@ -218,10 +218,13 @@ nav {
 }
 
 .nav-logo {
-    font-family: var(--font-serif);
-    font-size: 1.125rem;
-    color: var(--near-black);
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 40px;
+    width: auto;
 }
 
 .nav-links {
@@ -809,6 +812,38 @@ nav {
     font-weight: 400;
     font-size: 1rem;
     color: var(--olive);
+}
+
+/* Testimonial Carousel */
+.testimonial-carousel {
+    position: relative;
+    min-height: 200px;
+}
+
+.testimonial-slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.testimonial-slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.testimonial-arrow {
+    background: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .testimonial-quote {
+        font-size: 1.25rem;
+    }
+
+    .testimonial-carousel {
+        min-height: 280px;
+    }
 }
 
 
@@ -2003,9 +2038,8 @@ footer {
 }
 
 .footer-logo {
-    font-family: var(--font-serif);
-    font-size: 1.25rem;
-    color: var(--near-black);
+    height: 36px;
+    width: auto;
     margin-bottom: 1rem;
 }
 
@@ -2748,6 +2782,31 @@ footer {
     }
 }
 
+/* Returning Patient Booking */
+.returning-booking {
+    background-color: var(--sage);
+    padding: var(--section-padding) var(--content-padding);
+    text-align: center;
+}
+
+.returning-booking-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.returning-booking h2 {
+    font-family: var(--font-serif);
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--olive);
+}
+
+.returning-booking p {
+    margin-bottom: 2rem;
+    color: var(--near-black);
+}
+
 
 /* ========================================
    ABOUT PAGE
@@ -3427,5 +3486,445 @@ footer {
 
     .care-guide-title {
         font-size: 1.1rem;
+    }
+}
+
+
+/* ========================================
+   CONFIRMATION PAGES
+   ======================================== */
+.confirmation {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(80px + 4rem) 2rem 4rem;
+}
+
+.confirmation-inner {
+    max-width: 550px;
+    text-align: center;
+}
+
+.confirmation h1 {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 1rem;
+}
+
+.confirmation-intro {
+    font-family: var(--font-sans);
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--near-black);
+    margin-bottom: 3rem;
+}
+
+.confirmation-next {
+    background-color: var(--sage);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    margin-bottom: 2.5rem;
+}
+
+.confirmation-next h2 {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 0.75rem;
+}
+
+.confirmation-next p {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--near-black);
+    margin-bottom: 1.5rem;
+}
+
+.confirmation-links h2 {
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 1rem;
+}
+
+.confirmation-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.confirmation-links a {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--burnt-orange);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.confirmation-links a:hover {
+    color: var(--olive);
+}
+
+@media (max-width: 600px) {
+    .confirmation {
+        padding: calc(80px + 3rem) 1.5rem 3rem;
+    }
+
+    .confirmation h1 {
+        font-size: 2.5rem;
+    }
+
+    .confirmation-intro {
+        font-size: 1.05rem;
+    }
+
+    .confirmation-next {
+        padding: 2rem 1.5rem;
+    }
+
+    .confirmation-links ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+
+/* ========================================
+   BOOKING PAGE
+   ======================================== */
+.booking-header {
+    padding: calc(80px + 4rem) 2rem 3rem;
+    text-align: center;
+}
+
+.booking-header-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.booking-header h1 {
+    font-family: var(--font-serif);
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 1rem;
+}
+
+.booking-header p {
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--near-black);
+}
+
+.booking-header a {
+    color: var(--burnt-orange);
+    text-decoration: none;
+}
+
+.booking-header a:hover {
+    text-decoration: underline;
+}
+
+.booking-options {
+    padding: 0 2rem 4rem;
+}
+
+.booking-options-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.booking-card {
+    background-color: var(--sage);
+    padding: 2rem;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-card p:not(.eyebrow) {
+    flex-grow: 1;
+}
+
+.booking-card h2 {
+    font-family: var(--font-serif);
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 0.75rem;
+}
+
+.booking-card p {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--near-black);
+    margin-bottom: 1.5rem;
+}
+
+.booking-card .btn {
+    display: inline-block;
+    width: auto;
+    align-self: flex-start;
+}
+
+.booking-card-link {
+    display: block;
+    margin-top: 1rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--burnt-orange);
+    text-decoration: none;
+}
+
+.booking-card-link:hover {
+    text-decoration: underline;
+}
+
+.booking-questions {
+    padding: 0 2rem 4rem;
+    text-align: center;
+}
+
+.booking-questions-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.booking-questions p {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--near-black);
+}
+
+.booking-questions a {
+    color: var(--burnt-orange);
+    text-decoration: none;
+}
+
+.booking-questions a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .booking-header {
+        padding: calc(80px + 3rem) 1.5rem 2rem;
+    }
+
+    .booking-header h1 {
+        font-size: 2.25rem;
+    }
+
+    .booking-options {
+        padding: 0 1.5rem 3rem;
+    }
+
+    .booking-options-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-card {
+        padding: 1.75rem;
+    }
+}
+
+
+.discovery-returning {
+    margin-top: 1.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--near-black);
+}
+
+.discovery-returning a {
+    color: var(--burnt-orange);
+    text-decoration: none;
+}
+
+.discovery-returning a:hover {
+    text-decoration: underline;
+}
+
+
+.booking-card p a {
+    color: var(--burnt-orange);
+    text-decoration: none;
+}
+
+.booking-card p a:hover {
+    text-decoration: underline;
+}
+
+
+.booking-card .btn {
+    background-color: var(--olive);
+    color: var(--cream);
+}
+
+.booking-card .btn:hover {
+    background-color: var(--cream);
+    color: var(--olive);
+    transform: translateY(-2px);
+}
+
+
+.booking-card .eyebrow {
+    color: var(--olive);
+    margin-bottom: 0.5rem;
+}
+
+
+/* ========================================
+   CONTACT PAGE
+   ======================================== */
+.contact {
+    padding: calc(80px + 4rem) 2rem 4rem;
+}
+
+.contact-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+}
+
+.contact-info h1 {
+    font-family: var(--font-serif);
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 2rem;
+}
+
+.contact-block {
+    margin-bottom: 2rem;
+}
+
+.contact-block h2 {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--burnt-orange);
+    margin-bottom: 0.5rem;
+}
+
+.contact-block p {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--near-black);
+}
+
+.contact-block a {
+    color: var(--burnt-orange);
+    text-decoration: none;
+}
+
+.contact-block a:hover {
+    text-decoration: underline;
+}
+
+.contact-secondary {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-top: 0.25rem;
+}
+
+.contact-form h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 0.75rem;
+}
+
+.contact-form > p {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--near-black);
+    margin-bottom: 1.5rem;
+}
+
+.contact-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--near-black);
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(39, 38, 38, 0.2);
+    border-radius: var(--radius);
+    background-color: var(--cream);
+    color: var(--near-black);
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--olive);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .btn {
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: calc(80px + 3rem) 1.5rem 3rem;
+    }
+
+    .contact-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-info h1 {
+        font-size: 2.25rem;
     }
 }

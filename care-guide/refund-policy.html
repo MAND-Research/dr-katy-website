@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy | Dr. Katy Morrison</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-logo">Dr. Katy Morrison</a>
+        <ul class="nav-links">
+            <li><a href="/about">About</a></li>
+            <li class="nav-dropdown">
+                <a href="/services" class="nav-dropdown-toggle">Services</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="/elemental-health">New Patients</a></li>
+                    <li><a href="/elemental-care">Returning Patients</a></li>
+                </ul>
+            </li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/portal">Patient Portal</a></li>
+            <li><a href="/discovery" class="nav-cta">Work With Us</a></li>
+        </ul>
+        <button class="nav-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/elemental-health">New Patients</a></li>
+            <li><a href="/elemental-care">Returning Patients</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/portal">Patient Portal</a></li>
+        </ul>
+        <a href="/discovery" class="mobile-cta">Work With Us</a>
+    </div>
+
+    <article class="blog-post care-guide">
+        <header class="blog-post-header">
+            <p class="blog-post-meta">
+                <span class="blog-post-category">Policies</span>
+            </p>
+            <h1>Refund Policy</h1>
+        </header>
+
+        <div class="blog-post-content">
+            <h2>Supplements</h2>
+            <p>You can return unopened, unexpired supplements within 30 days of purchase for a full refund. However, opened or temperature-sensitive products cannot be returned due to safety and storage concerns.</p>
+
+            <h2>Lab Fees</h2>
+            <p>Laboratory charges are processed after sample collection through either a draw site or home kit. Once processed, these fees are considered final and cannot be refunded, even if you discontinue care or decline to review results.</p>
+
+            <h2>Services</h2>
+            <p>Services that have already been provided are non-refundable.</p>
+
+            <h2>Care Programs</h2>
+            <p>Prepaid care programs (such as Elemental Health or Elemental Care) may qualify for partial refunds if terminated early. An early cancellation fee of 15% applies, plus deductions for services already rendered. These programs require commitment and we recommend enrolling only when ready for full engagement. In exceptional circumstances involving serious illness or major life disruption, we may consider pausing or modifying a program on a case-by-case basis, though this is not guaranteed.</p>
+
+            <h2>Important Note</h2>
+            <p>This policy is current but may change. For specific details, please consult your intake documents or contact the clinic directly.</p>
+        </div>
+
+        <footer class="blog-post-footer">
+            <a href="/care-guide" class="blog-post-back">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+                Back to care guide
+            </a>
+        </footer>
+    </article>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <p class="footer-logo">Dr. Katy Morrison</p>
+                    <p class="footer-tagline">Integrative medicine for midlife women. Naturopathic care and acupuncture in Rockland, Maine.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Patients</h4>
+                        <ul>
+                            <li><a href="/new-patients">New Patients</a></li>
+                            <li><a href="/portal">Patient Portal</a></li>
+                            <li><a href="/faqs">FAQs</a></li>
+                            <li><a href="/resources">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Dr. Katy Morrison. Part of Midcoast Health Collective.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.nav-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+</body>
+</html>

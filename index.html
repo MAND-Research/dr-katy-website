@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav>
-        <a href="/" class="nav-logo">Dr. Katy Morrison</a>
+        <a href="/" class="nav-logo"><img src="images/logos/logo.png" alt="Dr. Katy Morrison"></a>
         <ul class="nav-links">
             <li><a href="/about">About</a></li>
             <li class="nav-dropdown">
@@ -143,21 +143,37 @@
     <!-- Testimonial Section -->
     <section class="testimonial">
         <div class="testimonial-inner">
-            <div class="testimonial-arrow">
+            <button class="testimonial-arrow testimonial-prev" aria-label="Previous testimonial">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                 </svg>
-            </div>
+            </button>
             <div class="testimonial-content">
                 <p class="eyebrow">Kind Words</p>
-                <p class="testimonial-quote">"For the first time in years, I feel like someone actually listened. Dr. Katy helped me understand what my body was trying to tell me and gave me real tools to feel like myself again."</p>
-                <p class="testimonial-author">— S.</p>
+                <div class="testimonial-carousel">
+                    <div class="testimonial-slide active">
+                        <p class="testimonial-quote">"After recommending Katy to many people, I finally had an appointment to address some long-term health issues. It was exactly what a healthcare visit should be. Calm, personal, thorough, and holistic. Katy listened carefully, asked pertinent questions, and had experienced insights that made me feel like there was hope for me."</p>
+                        <p class="testimonial-author">— Ali E.</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-quote">"Dr. Katy is a truly gifted healer with a keen scientific mind that beautifully supports her intuitive and compassionate nature. I felt instantly comfortable talking about what ailed me both physically and spiritually and I feel certain she is holding a vision for health and balance in all areas as I traverse through perimenopause and work to be stronger in the years ahead."</p>
+                        <p class="testimonial-author">— Morgan R.</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-quote">"First, finding the right fit for a naturopathic doctor is vital, then having her be an acupuncturist that works with you means your experience is perfect. I know that multiple times the acupuncture truly changed the issues I was experiencing. I also love that Dr. Katy will answer questions or explain when she is doing for you. I love the experience!"</p>
+                        <p class="testimonial-author">— Linda M.</p>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p class="testimonial-quote">"I am very grateful for Dr. Katy. She has supported me on my wellness path with active listening and through the use of natural remedies and acupuncture and has helped me sleep through the night. Seeing Dr. Katy has been one of the best decisions I have made recently to support myself!"</p>
+                        <p class="testimonial-author">— HH</p>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial-arrow">
+            <button class="testimonial-arrow testimonial-next" aria-label="Next testimonial">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
-            </div>
+            </button>
         </div>
     </section>
 
@@ -182,7 +198,7 @@
         <div class="footer-inner">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <p class="footer-logo">Dr. Katy Morrison</p>
+                    <img src="images/logos/logo.png" alt="Dr. Katy Morrison" class="footer-logo">
                     <p class="footer-tagline">Integrative medicine for midlife women. Naturopathic care and acupuncture in Rockland, Maine.</p>
                 </div>
                 <div class="footer-links">
@@ -239,6 +255,21 @@
                 document.body.style.overflow = '';
             });
         });
+
+        // Testimonial carousel
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const prevBtn = document.querySelector('.testimonial-prev');
+        const nextBtn = document.querySelector('.testimonial-next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            currentSlide = (index + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+        nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
     </script>
 </body>
 </html>

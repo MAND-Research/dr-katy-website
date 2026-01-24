@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Program Payments | Dr. Katy Morrison</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-logo">Dr. Katy Morrison</a>
+        <ul class="nav-links">
+            <li><a href="/about">About</a></li>
+            <li class="nav-dropdown">
+                <a href="/services" class="nav-dropdown-toggle">Services</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="/elemental-health">New Patients</a></li>
+                    <li><a href="/elemental-care">Returning Patients</a></li>
+                </ul>
+            </li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/portal">Patient Portal</a></li>
+            <li><a href="/discovery" class="nav-cta">Work With Us</a></li>
+        </ul>
+        <button class="nav-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/elemental-health">New Patients</a></li>
+            <li><a href="/elemental-care">Returning Patients</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/portal">Patient Portal</a></li>
+        </ul>
+        <a href="/discovery" class="mobile-cta">Work With Us</a>
+    </div>
+
+    <article class="blog-post care-guide">
+        <header class="blog-post-header">
+            <p class="blog-post-meta">
+                <span class="blog-post-category">Billing</span>
+            </p>
+            <h1>Understanding Program Payments</h1>
+        </header>
+
+        <div class="blog-post-content">
+            <p>Clear, consistent payment processing helps you focus on what matters—your health.</p>
+
+            <h2>Payment Plans</h2>
+            <ul>
+                <li>Choose between monthly payments or pay-in-full at enrollment</li>
+                <li>Pay-in-full option includes a discount</li>
+                <li>Monthly payment plans can be paid off early if desired</li>
+                <li>Early payoff doesn't qualify for the pay-in-full discount</li>
+                <li>Early cancellation available only per the cancellation policy</li>
+            </ul>
+
+            <h2>Monthly Payment Schedule</h2>
+            <ul>
+                <li>Payments process automatically on your enrollment date each month</li>
+                <li>If you enrolled on the 31st, payments process on the last day of each month</li>
+                <li>Need to adjust your payment date? Contact the office</li>
+            </ul>
+
+            <h2>Insurance and HSA Documentation</h2>
+            <ul>
+                <li>Superbills provided for completed visits upon request</li>
+                <li>Documentation available for HSA/FSA reimbursement</li>
+                <li>Superbills cover visit fees only (not labs or administrative fees)</li>
+                <li>Request documentation through the office</li>
+            </ul>
+
+            <p>Questions about payments? Contact the office.</p>
+        </div>
+
+        <footer class="blog-post-footer">
+            <a href="/care-guide" class="blog-post-back">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+                Back to care guide
+            </a>
+        </footer>
+    </article>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <p class="footer-logo">Dr. Katy Morrison</p>
+                    <p class="footer-tagline">Integrative medicine for midlife women. Naturopathic care and acupuncture in Rockland, Maine.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Patients</h4>
+                        <ul>
+                            <li><a href="/new-patients">New Patients</a></li>
+                            <li><a href="/portal">Patient Portal</a></li>
+                            <li><a href="/faqs">FAQs</a></li>
+                            <li><a href="/resources">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Dr. Katy Morrison. Part of Midcoast Health Collective.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="18" cy="6" r="1.5" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector('.nav-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+        menuBtn.addEventListener('click', () => {
+            menuBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,73 +1,391 @@
 {
   "posts": [
     {
-      "slug": "understanding-your-thyroid",
-      "title": "Understanding Your Thyroid: What the Labs Don't Tell You",
-      "date": "2026-01-15",
-      "category": "hormones",
-      "categoryLabel": "Hormones",
-      "excerpt": "Why 'normal' thyroid labs don't always mean your thyroid is functioning well, and what to look for instead.",
-      "image": "images/midcoast-health-session-II-47.jpg",
-      "imageAlt": "Post thumbnail"
+      "slug": "blending-naturopathic-and-chinese-medicine",
+      "title": "Blending Naturopathic and Chinese Medicine: A Truly Integrative Approach to Health",
+      "date": "2023-11-15",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "How combining naturopathic and Chinese medicine frameworks creates a more complete picture of your health.",
+      "image": "images/blog/annie-spratt-JLpDkdcuceI-unsplash.jpg",
+      "imageAlt": "Herbs and plants on a wooden table"
     },
     {
-      "slug": "gut-health-matters",
-      "title": "Why Your Gut Health Matters More Than You Think",
-      "date": "2026-01-08",
-      "category": "digestion",
-      "categoryLabel": "Digestion",
-      "excerpt": "The connection between your digestive system and everything from mood to immunity.",
-      "image": "images/midcoast-health-collective-4-5.jpg",
-      "imageAlt": "Post thumbnail"
+      "slug": "making-sense-of-supplements",
+      "title": "Making Sense of Supplements: A Comprehensive Guide",
+      "date": "2023-09-20",
+      "category": "supplements",
+      "categoryLabel": "Supplements",
+      "excerpt": "How to navigate the overwhelming world of supplements and find what actually helps.",
+      "image": "images/blog/natali-hordiiuk-n9m6cjO1tlw-unsplash.jpg",
+      "imageAlt": "Supplements arranged on a plate with fork and knife"
     },
     {
-      "slug": "3pm-crash",
-      "title": "The 3pm Crash: What Your Body Is Trying to Tell You",
-      "date": "2025-12-20",
-      "category": "energy",
-      "categoryLabel": "Energy",
-      "excerpt": "That afternoon slump isn't just about sleep. Here's what's really going on.",
-      "image": "images/midcoast-health-collective-4-75.jpg",
-      "imageAlt": "Post thumbnail"
-    },
-    {
-      "slug": "beyond-manage-your-stress",
-      "title": "Beyond 'Manage Your Stress': What Actually Helps",
-      "date": "2025-12-12",
+      "slug": "natural-treatments-for-anxiety",
+      "title": "Natural Treatments for Anxiety",
+      "date": "2023-07-12",
       "category": "stress",
       "categoryLabel": "Stress",
-      "excerpt": "Moving past generic advice to interventions that work for real life.",
-      "image": "images/midcoast-health-session-I-37.jpg",
-      "imageAlt": "Post thumbnail"
+      "excerpt": "Evidence-based natural approaches to managing anxiety.",
+      "image": "images/blog/khai-vern-aySmaTpUkzo-unsplash.jpg",
+      "imageAlt": "Woman sitting peacefully in meditation"
     },
     {
-      "slug": "cant-sleep",
-      "title": "Can't Sleep? It Might Not Be What You Think",
-      "date": "2025-12-05",
-      "category": "sleep",
-      "categoryLabel": "Sleep",
-      "excerpt": "Common sleep disruptors that have nothing to do with screen time or caffeine.",
-      "image": "images/midcoast-health-session-III-24.jpg",
-      "imageAlt": "Post thumbnail"
+      "slug": "slow-medicine",
+      "title": "Fast May Not Be Efficient: Slow Medicine Could Be the Answer",
+      "date": "2023-05-08",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "Why taking time with healthcare leads to better outcomes than the rush of conventional medicine.",
+      "image": "images/blog/lucas-Jlba19sPjdM-unsplash.jpg",
+      "imageAlt": "Sunlit forest path"
     },
     {
-      "slug": "first-naturopathic-visit",
-      "title": "What to Expect at Your First Naturopathic Visit",
-      "date": "2025-11-28",
-      "category": "integrative-medicine",
-      "categoryLabel": "Integrative Medicine",
-      "excerpt": "A guide to the intake process and what makes naturopathic appointments different.",
-      "image": "images/midcoast-health-collective-4-101.jpg",
-      "imageAlt": "Post thumbnail"
+      "slug": "how-to-get-better-sleep",
+      "title": "Life Hack: How to Get Better Sleep",
+      "date": "2023-03-22",
+      "category": "stress",
+      "categoryLabel": "Stress",
+      "excerpt": "Practical strategies for improving your sleep quality.",
+      "image": "images/blog/alexander-possingham-CeWNEEsHPbA-unsplash.jpg",
+      "imageAlt": "Gray cat sleeping peacefully on bed"
+    },
+    {
+      "slug": "lymphatic-system-detoxification",
+      "title": "Lymphatic System: Designed for Detoxification",
+      "date": "2023-01-18",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "Understanding your body's built-in detoxification system and how to support it.",
+      "image": "images/blog/megan-dujardin-LB_OWger9XE-unsplash.jpg",
+      "imageAlt": "Dry brushing for lymphatic support"
+    },
+    {
+      "slug": "therapeutic-order",
+      "title": "Therapeutic Order: What It Is, Why You Should Care",
+      "date": "2022-11-30",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "The naturopathic principle that guides treatment from least to most invasive.",
+      "image": "images/blog/vitaly-gariev-U8A4mHyO5HM-unsplash.jpg",
+      "imageAlt": "Patient and provider in conversation"
+    },
+    {
+      "slug": "melatonin-sleep-solution",
+      "title": "Melatonin: A DIY Sleep Solution",
+      "date": "2022-09-14",
+      "category": "stress",
+      "categoryLabel": "Stress",
+      "excerpt": "What melatonin can and can't do for your sleep.",
+      "image": "images/blog/quin-stevenson-3oyeaivM_fE-unsplash.jpg",
+      "imageAlt": "Dark bedroom with soft light through blinds"
+    },
+    {
+      "slug": "how-to-heal-faster",
+      "title": "How to Heal Faster",
+      "date": "2022-07-25",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "Simple hydrotherapy techniques you can use at home to support healing.",
+      "image": "images/blog/nader-ayman-1KH5oUafd2M-unsplash.jpg",
+      "imageAlt": "Hand reaching toward warm light"
+    },
+    {
+      "slug": "too-good-at-being-clean",
+      "title": "We Might Be Too Good at Being Clean",
+      "date": "2022-05-11",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "The hygiene hypothesis and why a little dirt might be good for you.",
+      "image": "images/blog/omer-haktan-bulut-skKEkioW5xw-unsplash.jpg",
+      "imageAlt": "Child playing in dirt outdoors"
+    },
+    {
+      "slug": "love-your-fats",
+      "title": "Love Your Fats!",
+      "date": "2022-03-08",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "Why dietary fats are essential and which ones to focus on.",
+      "image": "images/blog/roberta-sorge-uOBApnN_K7w-unsplash.jpg",
+      "imageAlt": "Olive oil in glass bottle with fresh olives"
+    },
+    {
+      "slug": "journaling-reset-mindset",
+      "title": "Journaling to Reset Your Mindset",
+      "date": "2022-01-19",
+      "category": "stress",
+      "categoryLabel": "Stress",
+      "excerpt": "How writing can help process emotions and gain clarity.",
+      "image": "images/blog/hannah-murrell-ma3ivTHdyxU-unsplash.jpg",
+      "imageAlt": "Notebook with pen on stone surface"
+    },
+    {
+      "slug": "bone-broth-food-as-medicine",
+      "title": "Bone Broth: Food as Medicine",
+      "date": "2021-11-22",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "The benefits of bone broth and a simple recipe to make your own.",
+      "image": "images/blog/nk-lee-yzt6Wdjn4BE-unsplash.jpg",
+      "imageAlt": "Broth simmering in pot with vegetables"
+    },
+    {
+      "slug": "the-science-of-habits",
+      "title": "The Science of Habits",
+      "date": "2021-09-15",
+      "category": "stress",
+      "categoryLabel": "Stress",
+      "excerpt": "Understanding how habits form and how to change them.",
+      "image": "images/blog/vitaly-gariev-M6nQrWaiDkk-unsplash.jpg",
+      "imageAlt": "Person doing yoga stretches at home"
+    },
+    {
+      "slug": "what-sets-natural-medicine-apart",
+      "title": "What Sets Natural Medicine Apart",
+      "date": "2021-07-28",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "The key differences between naturopathic and conventional approaches.",
+      "image": "images/blog/marion-botella-uaHShoIDGeo-unsplash.jpg",
+      "imageAlt": "Colorful spices including turmeric and cinnamon"
+    },
+    {
+      "slug": "gratitude-health",
+      "title": "Gratitude: Why It's Good for Your Health",
+      "date": "2021-05-12",
+      "category": "stress",
+      "categoryLabel": "Stress",
+      "excerpt": "The science behind gratitude and practical ways to cultivate it.",
+      "image": "images/blog/nathan-dumlao-fs_l0Xqlc90-unsplash.jpg",
+      "imageAlt": "Person holding sign that says Grateful"
+    },
+    {
+      "slug": "traditional-fermented-foods",
+      "title": "The Next Superfoods: Traditional Fermented Foods",
+      "date": "2021-03-03",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "Why fermented foods support gut health and how to incorporate them.",
+      "image": "images/blog/brooke-lark-kwaP8ybRPWk-unsplash.jpg",
+      "imageAlt": "Colorful jars of fermented vegetables"
+    },
+    {
+      "slug": "immune-boosters-cold-season",
+      "title": "Immune Boosters for Cold Season",
+      "date": "2021-01-20",
+      "category": "supplements",
+      "categoryLabel": "Supplements",
+      "excerpt": "Natural ways to support your immune system during cold and flu season.",
+      "image": "images/blog/alexander-zulkarnain-Gqv4fsAfmF8-unsplash.jpg",
+      "imageAlt": "Lemon and ginger on yellow background"
+    },
+    {
+      "slug": "do-no-harm",
+      "title": "Do No Harm",
+      "date": "2020-11-18",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "The naturopathic principle of primum non nocere and what it means for your care.",
+      "image": "images/blog/dylann-hendricks-qTibJUeDJRY-unsplash.jpg",
+      "imageAlt": "Open hands palms up"
+    },
+    {
+      "slug": "do-dark-days-lead-to-dark-moods",
+      "title": "Do Dark Days Lead to Dark Moods?",
+      "date": "2020-09-24",
+      "category": "stress",
+      "categoryLabel": "Stress",
+      "excerpt": "Understanding seasonal mood changes and when to seek support.",
+      "image": "images/blog/valerie-sidorova--i6HJKvuvXc-unsplash.jpg",
+      "imageAlt": "Snowy winter view through window"
+    },
+    {
+      "slug": "pumpkin-spice",
+      "title": "Pumpkin Spice: A Brilliant Herbal Remedy Hiding in Plain Sight",
+      "date": "2020-07-15",
+      "category": "supplements",
+      "categoryLabel": "Supplements",
+      "excerpt": "The medicinal properties of the spices in your favorite fall drink.",
+      "image": "images/blog/alex-moliski-7Y9DcEYbvLA-unsplash.jpg",
+      "imageAlt": "Spice jars including pumpkin pie spice"
+    },
+    {
+      "slug": "a-good-doctor-is-also-a-good-teacher",
+      "title": "A Good Doctor Is Also a Good Teacher",
+      "date": "2020-05-20",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "The naturopathic principle of docere and empowering patients through education.",
+      "image": "images/blog/robin-worrall-Q8HfuO9udts-unsplash.jpg",
+      "imageAlt": "Stack of books on wooden desk"
+    },
+    {
+      "slug": "nature-is-for-more-than-just-nature-lovers",
+      "title": "Nature Is for More Than Just Nature Lovers",
+      "date": "2020-03-11",
+      "category": "stress",
+      "categoryLabel": "Stress",
+      "excerpt": "Research on nature's health benefits and easy ways to get outside more.",
+      "image": "images/blog/aleksey-kuprikov-zxDldHUG83w-unsplash.jpg",
+      "imageAlt": "Person joyfully standing by waterfall in nature"
+    },
+    {
+      "slug": "importance-breathing-deeply",
+      "title": "The Importance of Breathing Deeply",
+      "date": "2020-01-08",
+      "category": "stress",
+      "categoryLabel": "Stress",
+      "excerpt": "How breath work can calm your nervous system.",
+      "image": "images/blog/fabian-moller-gI7zgb80QWY-unsplash.jpg",
+      "imageAlt": "Neon sign spelling breathe among plants"
+    },
+    {
+      "slug": "who-has-the-final-verdict-on-coffee",
+      "title": "Who Has the Final Verdict on Coffee?",
+      "date": "2019-11-14",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "The nuanced truth about coffee and your health.",
+      "image": "images/blog/jakub-dziubak-XtUd5SiX464-unsplash.jpg",
+      "imageAlt": "Coffee cup from above on cream background"
+    },
+    {
+      "slug": "apples-food-poison-medicine",
+      "title": "Apples: Food, Poison, Medicine",
+      "date": "2019-09-18",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "The surprising properties of this everyday fruit.",
+      "image": "images/blog/marek-studzinski-3D6yReT06p0-unsplash.jpg",
+      "imageAlt": "Red apples on tree branch"
+    },
+    {
+      "slug": "rosemary",
+      "title": "Rosemary",
+      "date": "2019-07-22",
+      "category": "supplements",
+      "categoryLabel": "Supplements",
+      "excerpt": "The medicinal uses of this common kitchen herb.",
+      "image": "images/blog/susana-bartolome-50JXh8kBfuQ-unsplash.jpg",
+      "imageAlt": "Fresh rosemary sprig close-up"
+    },
+    {
+      "slug": "get-most-out-of-visit",
+      "title": "Get the Most Out of Your Visit",
+      "date": "2019-05-09",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "Tips for preparing for and getting the most from your appointments.",
+      "image": "images/blog/sincerely-media-EtyBBUByPSQ-unsplash.jpg",
+      "imageAlt": "Two people shaking hands"
+    },
+    {
+      "slug": "fall-harvest-winter-squash",
+      "title": "Fall Harvest: Winter Squash",
+      "date": "2019-03-27",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "Nutritional benefits and recipes for seasonal squash.",
+      "image": "images/blog/kim-daniels-lnPCB2PkB8M-unsplash.jpg",
+      "imageAlt": "Acorn squash cut open on wooden surface"
+    },
+    {
+      "slug": "secret-about-naturopathic-medicine",
+      "title": "A Secret About Naturopathic Medicine",
+      "date": "2019-01-16",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "What many people don't understand about naturopathic care.",
+      "image": "images/blog/pascale-amez-2tnURUj7T7A-unsplash.jpg",
+      "imageAlt": "Hand holding fresh herb plant"
+    },
+    {
+      "slug": "you-know-more-than-your-doctor",
+      "title": "You Know More Than Your Doctor - How?",
+      "date": "2018-11-21",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "Why your insight about your own body is invaluable.",
+      "image": "images/blog/shubhy-RYJvQjrAlGc-unsplash.jpg",
+      "imageAlt": "Hand holding fresh herbs from garden"
+    },
+    {
+      "slug": "how-to-make-food-taste-great",
+      "title": "How to Make Food Taste Great",
+      "date": "2018-09-12",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "Simple techniques for making healthy food delicious.",
+      "image": "images/blog/calum-lewis-vA1L1jRTM70-unsplash.jpg",
+      "imageAlt": "Colorful spices in silver spoons"
+    },
+    {
+      "slug": "bring-questions-to-your-visit",
+      "title": "Getting the Most Out of Your Visit: Bring a List of Questions",
+      "date": "2018-07-04",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "Why coming prepared helps you get better care.",
+      "image": "images/blog/kate-oseen-4fkkZTJolRo-unsplash.jpg",
+      "imageAlt": "Woman laughing with eyes closed"
+    },
+    {
+      "slug": "build-care-team",
+      "title": "Build Your Care Team",
+      "date": "2018-05-16",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "How to assemble a team of healthcare providers who work together.",
+      "image": "images/blog/national-cancer-institute-BxXgTQEw1M4-unsplash.jpg",
+      "imageAlt": "Hands holding in supportive gesture"
+    },
+    {
+      "slug": "eating-microbes-feel-better",
+      "title": "How Eating Tiny Microbes May Help You Feel Better",
+      "date": "2018-03-28",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "The connection between probiotics and your wellbeing.",
+      "image": "images/blog/cdc-tLQRMO33DeI-unsplash.jpg",
+      "imageAlt": "Microscopic view of beneficial bacteria"
+    },
+    {
+      "slug": "smell-better-digestion",
+      "title": "Smell Your Way to Better Digestion",
+      "date": "2018-01-17",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "How your sense of smell connects to digestive health.",
+      "image": "images/blog/kevin-mccutcheon-APDMfLHZiRA-unsplash.jpg",
+      "imageAlt": "Person cooking aromatic food in pan"
+    },
+    {
+      "slug": "blueberries-good-for-you",
+      "title": "Blueberries Are Irritatingly Good for You",
+      "date": "2017-11-08",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "The many health benefits of this superfood.",
+      "image": "images/blog/joanna-kosinska-4qujjbj3srs-unsplash.jpg",
+      "imageAlt": "Fresh blueberries in white bowl"
+    },
+    {
+      "slug": "heirloom-carrots",
+      "title": "Heirloom Carrots: Yum!",
+      "date": "2017-09-20",
+      "category": "digestion",
+      "categoryLabel": "Digestion",
+      "excerpt": "Why variety matters and a delicious carrot recipe.",
+      "image": "images/blog/gabriel-gurrola-fcgPRZmTM5w-unsplash.jpg",
+      "imageAlt": "Colorful heirloom carrots"
     }
   ],
   "categories": [
-    { "id": "hormones", "label": "Hormones" },
+    { "id": "natural-medicine", "label": "Natural Medicine" },
     { "id": "digestion", "label": "Digestion" },
-    { "id": "energy", "label": "Energy" },
     { "id": "stress", "label": "Stress" },
-    { "id": "sleep", "label": "Sleep" },
-    { "id": "integrative-medicine", "label": "Integrative Medicine" }
+    { "id": "supplements", "label": "Supplements" }
   ],
   "config": {
     "postsPerPage": 9
