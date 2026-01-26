@@ -897,6 +897,10 @@ nav {
     background-position: center;
 }
 
+.hero-offer--care {
+    background-image: url('../images/midcoast-health-session-III-12.jpg');
+}
+
 .hero-offer::before {
     content: "";
     position: absolute;
