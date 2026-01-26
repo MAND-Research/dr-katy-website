@@ -98,6 +98,15 @@
       "excerpt": "How single visits work outside of a care program.",
       "icon": "calendar",
       "audience": ["returning-patients"]
+    },
+    {
+      "slug": "primary-care",
+      "title": "Primary Care and Integrative Medicine",
+      "category": "visits",
+      "categoryLabel": "Visits",
+      "excerpt": "How naturopathic care complements (but doesn't replace) your PCP.",
+      "icon": "user",
+      "audience": ["new-patients", "returning-patients"]
     }
   ],
   "categories": [
