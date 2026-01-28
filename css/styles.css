@@ -947,6 +947,12 @@ nav {
     margin-bottom: 2rem;
 }
 
+.hero-offer-subheadline--narrow {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* ========================================
    OPENING SECTION (Sales Pages)
@@ -3103,6 +3109,96 @@ footer {
 
     .about-logos-inner img {
         height: 120px;
+    }
+
+    /* Footer Mobile */
+    footer {
+        padding: 3rem 2rem 2rem;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-links {
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .footer-col {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    /* Qualities Banner Mobile */
+    .qualities-banner {
+        padding: 2rem;
+    }
+
+    .qualities-inner {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .quality-item {
+        flex-direction: row;
+        gap: 0.75rem;
+    }
+
+    /* Lists Section Mobile */
+    .lists-inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .lists-col {
+        padding: 2.5rem 2rem;
+    }
+
+    /* Homepage About Section Mobile */
+    .about-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-photo {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content a {
+        justify-content: center;
+    }
+
+    /* Hero Offer Mobile */
+    .hero-offer-content {
+        padding: 2.5rem 2rem;
+        margin: 0 1rem;
+    }
+
+    .hero-offer-headline {
+        font-size: 2rem;
     }
 }
 
