@@ -1,7 +1,7 @@
 {
   "guides": [
     {
-      "slug": "what-to-expect-first-visit",
+      "slug": "what-to-expect-at-your-first-visit",
       "title": "What to Expect at Your First Visit",
       "category": "getting-started",
       "categoryLabel": "Getting Started",
@@ -10,7 +10,7 @@
       "audience": ["new-patients"]
     },
     {
-      "slug": "how-to-begin-care",
+      "slug": "how-to-begin-care-with-dr-katy",
       "title": "How to Begin Care with Dr. Katy",
       "category": "getting-started",
       "categoryLabel": "Getting Started",
@@ -19,7 +19,7 @@
       "audience": ["new-patients"]
     },
     {
-      "slug": "lab-testing",
+      "slug": "our-approach-to-lab-testing",
       "title": "Our Approach to Lab Testing",
       "category": "visits",
       "categoryLabel": "Visits",
@@ -28,7 +28,7 @@
       "audience": ["new-patients", "returning-patients"]
     },
     {
-      "slug": "lab-results-communication",
+      "slug": "understanding-your-lab-results-our-communication-approach",
       "title": "Understanding Your Lab Results",
       "category": "visits",
       "categoryLabel": "Visits",
@@ -37,7 +37,7 @@
       "audience": ["new-patients", "returning-patients"]
     },
     {
-      "slug": "insurance-billing",
+      "slug": "why-i-dont-bill-insurance",
       "title": "Why I Don't Bill Insurance Directly",
       "category": "billing",
       "categoryLabel": "Billing",
@@ -46,7 +46,7 @@
       "audience": ["new-patients", "returning-patients"]
     },
     {
-      "slug": "understanding-payments",
+      "slug": "understanding-package-payments",
       "title": "Understanding Program Payments",
       "category": "billing",
       "categoryLabel": "Billing",
@@ -64,7 +64,7 @@
       "audience": ["new-patients", "returning-patients"]
     },
     {
-      "slug": "program-timeline-renewal",
+      "slug": "package-timeline-and-renewal",
       "title": "Elemental Care Timeline and Renewal",
       "category": "policies",
       "categoryLabel": "Policies",

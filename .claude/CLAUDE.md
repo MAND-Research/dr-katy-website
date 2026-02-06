@@ -173,6 +173,50 @@ Defined in posts.json `categories` array. Filter buttons auto-generate from this
 - Current patients resources page
 - Care guide hub + articles: new-patients, lab-testing, insurance, primary-care, conditions
 
+## Pre-Launch Checklist
+
+### SEO
+- [ ] Meta titles on every page (unique, under 60 characters)
+- [ ] Meta descriptions on every page (unique, under 160 characters)
+- [ ] Image alt text throughout
+- [ ] Sitemap.xml generated and submitted
+- [ ] robots.txt configured
+- [ ] Heading hierarchy (one H1 per page, logical H2/H3 structure)
+- [ ] Page speed optimized
+
+### Performance
+- [ ] Images compressed
+- [ ] Core Web Vitals passing (LCP, CLS, FID)
+- [ ] Mobile load time acceptable
+
+### Accessibility
+- [ ] Color contrast passes WCAG
+- [ ] Keyboard navigation works
+- [ ] Form labels and error states clear
+- [ ] Focus states visible
+
+### Copy/Conversion
+- [ ] Clear primary CTA on each page
+- [ ] Benefit-focused headlines
+- [ ] Social proof well-placed
+- [ ] Path to booking is frictionless
+
+### Technical
+- [ ] Broken link check
+- [ ] All forms functional
+- [ ] Analytics installed
+- [ ] SSL certificate active
+- [ ] Favicon set
+- [ ] 404 page works
+
+### Legal
+- [ ] Privacy policy page
+- [ ] Any needed medical disclaimers
+
+### Social Sharing
+- [ ] Open Graph tags (title, description, image)
+- [ ] Favicon for browser tabs/bookmarks
+
 ## Working Approach
 - Build section by section, get feedback before moving on
 - Don't build full pages and react (that didn't work well)

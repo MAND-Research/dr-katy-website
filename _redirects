@@ -1,0 +1,20 @@
+# Netlify redirects
+
+# Old URL patterns to new
+/home /
+/schedule /booking
+
+# Old Squarespace duplicates
+/elemental-health-offering /elemental-health
+/elemental-health-1 /elemental-health
+/elemental-health-2 /elemental-health
+/naturopathic-medicine-1 /naturopathic-medicine
+/group-acupuncture-1 /booking
+
+# Old programs (no longer offered)
+/nurtured-beginnings /
+/nb-thank-you /
+/rocklands-center-for-natural-health /
+
+# Care guide that doesn't exist on new site
+/care-guide/why-a-package /care-guide/how-to-begin-care-with-dr-katy
