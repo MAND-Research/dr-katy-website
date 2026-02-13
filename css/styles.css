@@ -610,7 +610,7 @@ nav {
 .lists {
     padding: var(--section-padding) var(--content-padding);
     position: relative;
-    background-image: url('../images/midcoast-health-collective-4-101.jpg');
+    background-image: url('../images/midcoast-health-collective-4-101.webp');
     background-size: cover;
     background-position: center;
 }
@@ -892,13 +892,13 @@ nav {
     justify-content: center;
     padding: 100px var(--content-padding) var(--section-padding);
     position: relative;
-    background-image: url('../images/midcoast-health-session-II-57.jpg');
+    background-image: url('../images/midcoast-health-session-II-57.webp');
     background-size: cover;
     background-position: center;
 }
 
 .hero-offer--care {
-    background-image: url('../images/midcoast-health-session-III-12.jpg');
+    background-image: url('../images/midcoast-health-session-III-12.webp');
 }
 
 .hero-offer::before {
