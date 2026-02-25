@@ -11,10 +11,11 @@
     <meta property="og:url" content="https://drkatymorrison.com/blog/the-science-of-habits">
     <meta property="og:title" content="The Science of Habits | Dr. Katy Morrison">
     <meta property="og:description" content="Understanding how habits form and how to change them.">
-    <meta property="og:image" content="https://drkatymorrison.com/images/midcoast-health-collective-4-50.jpg">
+    <meta property="og:image" content="https://drkatymorrison.com/images/midcoast-health-collective-4-50.webp">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
     <nav>
         <a href="/" class="nav-logo">Dr. Katy Morrison</a>
         <ul class="nav-links">
@@ -30,7 +31,7 @@
             <li><a href="https://midcoasthealthcollective.practicebetter.io" target="_blank" rel="noopener">Patient Portal</a></li>
             <li><a href="/discovery-call" class="nav-cta">Work With Us</a></li>
         </ul>
-        <button class="nav-menu-btn" aria-label="Toggle menu">
+        <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -49,6 +50,8 @@
         <a href="/discovery-call" class="mobile-cta">Work With Us</a>
     </div>
 
+    <div id="main-content"></div>
+
     <!-- Blog Post -->
     <article class="blog-post">
         <header class="blog-post-header">
@@ -60,7 +63,7 @@
         </header>
 
         <figure class="blog-post-image">
-            <img src="../images/blog/vitaly-gariev-M6nQrWaiDkk-unsplash.jpg" alt="Person doing yoga stretches at home">
+            <img src="../images/blog/vitaly-gariev-M6nQrWaiDkk-unsplash.webp" alt="Person doing yoga stretches at home">
         </figure>
 
         <div class="blog-post-content">
@@ -163,6 +166,7 @@
             menuBtn.classList.toggle('active');
             mobileMenu.classList.toggle('active');
             document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            menuBtn.setAttribute('aria-expanded', mobileMenu.classList.contains('active'));
         });
 
         mobileLinks.forEach(link => {
@@ -170,6 +174,7 @@
                 menuBtn.classList.remove('active');
                 mobileMenu.classList.remove('active');
                 document.body.style.overflow = '';
+                menuBtn.setAttribute('aria-expanded', 'false');
             });
         });
     </script>

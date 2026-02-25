@@ -201,6 +201,28 @@ button:focus-visible {
 
 
 /* ========================================
+   SKIP TO CONTENT
+   ======================================== */
+.skip-to-content {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 10000;
+    padding: 0.75rem 1.5rem;
+    background: var(--olive);
+    color: var(--cream);
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 0 0 var(--radius) 0;
+}
+
+.skip-to-content:focus {
+    left: 0;
+}
+
+
+/* ========================================
    NAVIGATION
    ======================================== */
 nav {

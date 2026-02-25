@@ -10,3 +10,6 @@ session-summary*.md
 
 # Zip files (fonts already extracted)
 *.zip
+
+# Image backups (JPG originals, not used by live site)
+image-backups/
