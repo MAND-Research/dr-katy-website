@@ -2116,6 +2116,15 @@ footer {
     opacity: 0.5;
 }
 
+.footer-disclaimer {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: var(--near-black);
+    opacity: 0.4;
+    margin-top: 0.75rem;
+}
+
 .footer-social a {
     color: var(--near-black);
     opacity: 0.7;
@@ -4027,4 +4036,74 @@ footer {
     .contact-info h1 {
         font-size: 2.25rem;
     }
+}
+
+/* ========================================
+   Legal Page (Privacy Policy)
+   ======================================== */
+
+.legal-page {
+    padding: calc(80px + 4rem) 2rem 4rem;
+}
+
+.legal-page-inner {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.legal-page h1 {
+    font-family: var(--font-serif);
+    font-size: 2.75rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 0.5rem;
+}
+
+.legal-updated {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--near-black);
+    opacity: 0.5;
+    margin-bottom: 3rem;
+}
+
+.legal-page-inner h2 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--olive);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.legal-page-inner p {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--near-black);
+    margin-bottom: 1rem;
+}
+
+.legal-page-inner ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.legal-page-inner li {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--near-black);
+    margin-bottom: 0.5rem;
+}
+
+.legal-page-inner a {
+    color: var(--burnt-orange);
+}
+
+.legal-page-inner a:hover {
+    opacity: 0.8;
 }
