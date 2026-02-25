@@ -109,7 +109,7 @@ body {
 .btn {
     display: inline-block;
     background-color: var(--sage);
-    color: var(--olive);
+    color: #555738;
     font-family: var(--font-sans);
     font-weight: 400;
     font-size: 0.9rem;
@@ -271,6 +271,15 @@ nav {
     position: relative;
 }
 
+.nav-dropdown-toggle {
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
 .nav-dropdown-menu {
     position: absolute;
     top: 100%;
@@ -288,7 +297,8 @@ nav {
     margin-top: 0.5rem;
 }
 
-.nav-dropdown:hover .nav-dropdown-menu {
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
     opacity: 1;
     visibility: visible;
 }
@@ -992,7 +1002,7 @@ nav {
     margin-right: auto;
 }
 
-.opening-inner h4 {
+.opening-inner h2 {
     font-family: var(--font-sans);
     font-size: 0.7rem;
     font-weight: 400;
@@ -1003,7 +1013,7 @@ nav {
     margin-top: 2.5rem;
 }
 
-.opening-inner h4:first-child {
+.opening-inner h2:first-child {
     margin-top: 0;
 }
 
@@ -2075,7 +2085,7 @@ footer {
     text-transform: uppercase;
     color: var(--near-black);
     margin-bottom: 1rem;
-    opacity: 0.5;
+    opacity: 0.65;
 }
 
 .footer-col ul {
@@ -2113,7 +2123,7 @@ footer {
     font-weight: 300;
     font-size: 0.85rem;
     color: var(--near-black);
-    opacity: 0.5;
+    opacity: 0.65;
 }
 
 .footer-disclaimer {
@@ -2121,7 +2131,7 @@ footer {
     font-weight: 300;
     font-size: 0.75rem;
     color: var(--near-black);
-    opacity: 0.4;
+    opacity: 0.55;
     margin-top: 0.75rem;
 }
 
@@ -2942,7 +2952,7 @@ footer {
     margin-bottom: 0;
 }
 
-.credential h4 {
+.credential h3 {
     font-family: var(--font-sans);
     font-weight: 600;
     font-size: 0.95rem;
@@ -2950,13 +2960,13 @@ footer {
     margin-bottom: 0.25rem;
 }
 
-.credential h4 a {
+.credential h3 a {
     color: var(--near-black);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.credential h4 a:hover {
+.credential h3 a:hover {
     color: var(--burnt-orange);
 }
 
@@ -4011,6 +4021,7 @@ footer {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--olive);
+    box-shadow: 0 0 0 2px var(--olive);
 }
 
 .form-group textarea {
