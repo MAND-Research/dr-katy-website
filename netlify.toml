@@ -23,3 +23,8 @@
   for = "/css/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Link = '''</fonts/Cooper%20BT/CooperBT-Regular.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin, </fonts/sofia-pro/SofiaPro-Regular.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin'''

@@ -12,7 +12,31 @@
     <meta property="og:title" content="Elemental Care | Dr. Katy Morrison">
     <meta property="og:description" content="Ongoing naturopathic care for established patients. Up to 8 visits, direct messaging, annual labs, and a doctor who already knows your story.">
     <meta property="og:image" content="https://drkatymorrison.com/images/midcoast-health-collective-4-50.webp">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="fonts/Cooper BT/CooperBT-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/sofia-pro/SofiaPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="images/midcoast-health-session-III-12.webp">
+    <style>
+        :root{--olive:#686A47;--burnt-orange:#AB5818;--cream:#FDFAF5;--near-black:#272626;--sage:#D6DAC8;--font-serif:'Cooper BT',Georgia,serif;--font-sans:'Sofia Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--content-padding:4rem;--radius:10px;--transition:all .25s ease}
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{font-size:16px}
+        body{font-family:var(--font-sans);background-color:var(--cream);color:var(--near-black);line-height:1.6}
+        .skip-to-content{position:absolute;left:-9999px;top:0;z-index:10000;padding:.75rem 1.5rem;background:var(--olive);color:var(--cream);font-size:.9rem;text-decoration:none;border-radius:0 0 var(--radius) 0}
+        .skip-to-content:focus{left:0}
+        nav{display:flex;justify-content:space-between;align-items:center;padding:2rem var(--content-padding);background-color:var(--cream);position:fixed;top:0;left:0;right:0;z-index:100;border-bottom:1px solid rgba(39,38,38,.1)}
+        .nav-logo{display:flex;align-items:center}
+        .nav-logo img{height:40px;width:auto}
+        .nav-links{display:flex;align-items:center;gap:3rem;list-style:none}
+        .nav-links a{font-family:var(--font-sans);font-weight:300;font-size:1rem;letter-spacing:.03em;color:var(--near-black);text-decoration:none}
+        .nav-cta{background-color:var(--sage);color:var(--olive)!important;padding:.75rem 1.5rem;border-radius:var(--radius);font-weight:400!important;font-size:.9rem;letter-spacing:.03em;display:inline-flex;align-items:center;justify-content:center;line-height:1}
+        .nav-dropdown-toggle{background:none;border:none;font:inherit;color:inherit;cursor:pointer;padding:0}
+        .nav-dropdown-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%);background-color:var(--cream);border-radius:var(--radius);box-shadow:0 4px 20px rgba(0,0,0,.1);padding:.75rem 0;min-width:160px;list-style:none;opacity:0;visibility:hidden}
+        .nav-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;width:28px;height:28px;background:none;border:none;cursor:pointer;padding:0}
+        .nav-menu-btn span{display:block;width:100%;height:2px;background-color:var(--near-black)}
+        .mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background-color:var(--cream);z-index:99;padding:8rem 2rem 2rem;opacity:0;visibility:hidden}
+        @media(max-width:768px){nav{padding:1.5rem 2rem}.nav-links{display:none}.nav-menu-btn{display:flex}.mobile-menu{display:block}}
+    </style>
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>

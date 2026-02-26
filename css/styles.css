@@ -30,7 +30,8 @@
    ======================================== */
 @font-face {
     font-family: 'Cooper BT';
-    src: url('../fonts/Cooper BT/Cooper BT Regular.ttf') format('truetype');
+    src: url('../fonts/Cooper BT/CooperBT-Regular.woff2') format('woff2'),
+         url('../fonts/Cooper BT/Cooper BT Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -38,7 +39,8 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../fonts/sofia-pro/Sofia Pro Regular Az.otf') format('opentype');
+    src: url('../fonts/sofia-pro/SofiaPro-Regular.woff2') format('woff2'),
+         url('../fonts/sofia-pro/Sofia Pro Regular Az.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -46,7 +48,8 @@
 
 @font-face {
     font-family: 'Sofia Pro';
-    src: url('../fonts/sofia-pro/Sofia Pro Light Az.otf') format('opentype');
+    src: url('../fonts/sofia-pro/SofiaPro-Light.woff2') format('woff2'),
+         url('../fonts/sofia-pro/Sofia Pro Light Az.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -927,7 +930,7 @@ nav {
     justify-content: center;
     padding: 100px var(--content-padding) var(--section-padding);
     position: relative;
-    background-image: url('../images/midcoast-health-session-II-57.webp');
+    background-image: url('../images/midcoast-health-session-II-57-cropped.webp');
     background-size: cover;
     background-position: center;
 }
