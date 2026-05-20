@@ -27,4 +27,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Link = '''</fonts/Cooper%20BT/CooperBT-Regular.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin, <https://fonts.googleapis.com>; rel=preconnect, <https://fonts.gstatic.com>; rel=preconnect; crossorigin'''
+    Link = '''</fonts/Cooper/Cooper-Regular.woff2>; rel=preload; as=font; type="font/woff2"; crossorigin, <https://fonts.googleapis.com>; rel=preconnect, <https://fonts.gstatic.com>; rel=preconnect; crossorigin'''

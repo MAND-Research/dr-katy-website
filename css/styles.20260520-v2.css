@@ -12,7 +12,7 @@
    - Muted Teal (reserved):  #9CAFAA
 
    Typography:
-   - Headlines: Cooper BT (serif)
+   - Headlines: Cooper (Indestructible Type, OFL — Owen Earl's revival)
    - Body: Nunito (sans-serif, via Google Fonts)
 
    Spacing Scale:
@@ -29,9 +29,8 @@
    FONTS
    ======================================== */
 @font-face {
-    font-family: 'Cooper BT';
-    src: url('../fonts/Cooper BT/CooperBT-Regular.woff2') format('woff2'),
-         url('../fonts/Cooper BT/Cooper BT Regular.ttf') format('truetype');
+    font-family: 'Cooper';
+    src: url('../fonts/Cooper/Cooper-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -54,7 +53,7 @@
     --muted-teal: #9CAFAA;
 
     /* Typography */
-    --font-serif: 'Cooper BT', Georgia, serif;
+    --font-serif: 'Cooper', Georgia, serif;
     --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
     /* Spacing */
