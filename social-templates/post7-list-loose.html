@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: #FDFAF5;
+    padding: 120px 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .lead {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: rgba(39, 38, 38, 0.5);
+    margin-bottom: 32px;
+    letter-spacing: 0.01em;
+  }
+
+  .headline {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 44px;
+    line-height: 1.35;
+    color: #272626;
+    margin-bottom: 56px;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .item {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.45;
+    color: #272626;
+    padding-left: 32px;
+    position: relative;
+  }
+
+  .item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #AB5818;
+  }
+
+  .footer {
+    margin-top: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    color: rgba(39, 38, 38, 0.35);
+  }
+</style>
+</head>
+<body>
+  <div class="lead">You're looking for...</div>
+  <div class="headline">A provider who does things differently</div>
+  <div class="items">
+    <div class="item">Someone who truly listens</div>
+    <div class="item">Care that honors your whole self</div>
+    <div class="item">Clarity amidst conflicting advice</div>
+    <div class="item">Real support for this season of life</div>
+    <div class="item">Understanding, not just symptom management</div>
+  </div>
+  <div class="footer">
+    <div class="brand">drkatymorrison.com</div>
+  </div>
+</body>
+</html>

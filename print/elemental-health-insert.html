@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elemental Health - Pricing Insert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ============================================
+     FONTS
+     ============================================ */
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  /* ============================================
+     COLORS & VARIABLES
+     ============================================ */
+  :root {
+    --cream: #FDFAF5;
+    --olive: #686A47;
+    --sage: #D6DAC8;
+    --burnt-orange: #AB5818;
+    --near-black: #272626;
+    --card-width: 3.5in;
+    --card-height: 5in;
+  }
+
+  /* ============================================
+     PRINT SETUP
+     ============================================ */
+  @page {
+    size: 3.5in 5in;
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Nunito', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    color: var(--near-black);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ============================================
+     CARD STRUCTURE
+     ============================================ */
+  .card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  /* ============================================
+     FRONT
+     ============================================ */
+  .card-front {
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5in 0.4in;
+  }
+
+  .front-eyebrow {
+    font-family: 'Nunito', sans-serif;
+    font-size: 8pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--burnt-orange);
+    margin-bottom: 0.15in;
+  }
+
+  .front-title {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 26pt;
+    font-weight: 400;
+    color: var(--olive);
+    line-height: 1.15;
+    margin-bottom: 0.3in;
+  }
+
+  .editorial-line {
+    width: 1in;
+    height: 1px;
+    background: rgba(39, 38, 38, 0.15);
+    margin-bottom: 0.3in;
+  }
+
+  .price-main {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 28pt;
+    font-weight: 400;
+    color: var(--olive);
+    margin-bottom: 0.06in;
+  }
+
+  .price-detail {
+    font-family: 'Nunito', sans-serif;
+    font-size: 11pt;
+    font-weight: 400;
+    color: var(--near-black);
+    opacity: 0.7;
+    margin-bottom: 0.35in;
+  }
+
+  .front-summary {
+    font-size: 11pt;
+    line-height: 1.55;
+    color: var(--near-black);
+    opacity: 0.8;
+  }
+
+  /* ============================================
+     BACK
+     ============================================ */
+  .card-back {
+    background-color: var(--olive);
+    display: flex;
+    flex-direction: column;
+    padding: 0.35in 0.4in;
+  }
+
+  .back-eyebrow {
+    font-family: 'Nunito', sans-serif;
+    font-size: 8pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--sage);
+    margin-top: 0.2in;
+    margin-bottom: 0.12in;
+  }
+
+  .back-heading {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 16pt;
+    font-weight: 400;
+    color: var(--cream);
+    line-height: 1.3;
+    margin-bottom: 0.3in;
+  }
+
+  .included-item {
+    padding: 0.06in 0;
+    border-bottom: 1px solid rgba(253, 250, 245, 0.12);
+  }
+
+  .included-item:last-child {
+    border-bottom: none;
+  }
+
+  .item-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+    color: var(--cream);
+  }
+
+  .item-detail {
+    font-family: 'Nunito', sans-serif;
+    font-size: 9pt;
+    font-weight: 300;
+    color: var(--sage);
+    opacity: 0.8;
+  }
+
+  .back-cta {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 0.15in;
+  }
+
+  .back-cta img {
+    width: 0.7in;
+    height: 0.7in;
+    border-radius: 6px;
+    margin-bottom: 0.1in;
+  }
+
+  .back-url {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 9pt;
+    color: var(--sage);
+    opacity: 0.7;
+  }
+
+  /* ============================================
+     SCREEN PREVIEW
+     ============================================ */
+  @media screen {
+    body {
+      background: #e8e8e8;
+      padding: 0.5in;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5in;
+      justify-content: center;
+    }
+
+    .card {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+
+    .card-label {
+      font-family: 'Nunito', sans-serif;
+      font-size: 12pt;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: center;
+      margin-bottom: 0.15in;
+      display: block;
+      width: var(--card-width);
+    }
+
+    .card-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media print {
+    .card-label { display: none; }
+    .card-wrapper { display: contents; }
+    body { background: none; padding: 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================================================
+     FRONT
+     ================================================ -->
+<div class="card-wrapper">
+  <span class="card-label">Front</span>
+  <div class="card card-front">
+    <div class="front-eyebrow">Your Investment</div>
+    <div class="front-title">Elemental<br>Health</div>
+    <div class="editorial-line"></div>
+    <div class="price-main">$2,500</div>
+    <div class="price-detail">4-month program</div>
+    <p class="front-summary">
+      Naturopathic medicine and acupuncture, together in one integrative program.
+    </p>
+  </div>
+</div>
+
+<!-- ================================================
+     BACK
+     ================================================ -->
+<div class="card-wrapper">
+  <span class="card-label">Back</span>
+  <div class="card card-back">
+    <div class="back-eyebrow">What's Included</div>
+    <div class="back-heading">Everything you need to begin.</div>
+
+    <div class="included-item">
+      <div class="item-name">Initial visit (90 min)</div>
+    </div>
+    <div class="included-item">
+      <div class="item-name">Three follow-ups (60 min each)</div>
+    </div>
+    <div class="included-item">
+      <div class="item-name">Comprehensive lab panel</div>
+    </div>
+    <div class="included-item">
+      <div class="item-name">Acupuncture at every visit</div>
+    </div>
+    <div class="included-item">
+      <div class="item-name">Direct messaging with Dr. Katy</div>
+    </div>
+    <div class="included-item">
+      <div class="item-name">15% off supplements</div>
+    </div>
+
+    <div class="back-cta">
+      <img src="qr-elemental-health.png" alt="QR code to drkatymorrison.com/elemental-health">
+      <div class="back-url">drkatymorrison.com/elemental-health</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

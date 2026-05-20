@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elemental Health - Trifold Brochure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ============================================
+     FONTS
+     ============================================ */
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Light Italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  /* ============================================
+     COLORS & VARIABLES
+     ============================================ */
+  :root {
+    --cream: #FDFAF5;
+    --olive: #686A47;
+    --sage: #D6DAC8;
+    --burnt-orange: #AB5818;
+    --golden: #BC8B41;
+    --near-black: #272626;
+    --brick-red: #AB5818;
+    --panel-width: 3.6875in;
+    --panel-fold: 3.625in;
+    --panel-height: 8.5in;
+  }
+
+  /* ============================================
+     PRINT SETUP
+     ============================================ */
+  @page {
+    size: 11in 8.5in;
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Nunito', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    color: var(--near-black);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ============================================
+     PAGE STRUCTURE
+     ============================================ */
+  .page {
+    width: 11in;
+    height: 8.5in;
+    display: flex;
+    position: relative;
+    page-break-after: always;
+    overflow: hidden;
+  }
+
+  .panel {
+    width: var(--panel-width);
+    height: var(--panel-height);
+    padding: 0.5in 0.4in;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ============================================
+     SHARED TYPOGRAPHY
+     ============================================ */
+  .eyebrow {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--burnt-orange);
+    margin-bottom: 6pt;
+  }
+
+  .eyebrow.olive { color: var(--olive); }
+  .eyebrow.cream { color: var(--cream); }
+
+  h1, h2, h3 {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  h1 { font-size: 30pt; color: var(--olive); }
+  h2 { font-size: 20pt; color: var(--olive); margin-bottom: 6pt; }
+  h3 { font-size: 15pt; color: var(--olive); margin-bottom: 3pt; }
+
+  p {
+    font-size: 12pt;
+    line-height: 1.6;
+    color: var(--near-black);
+  }
+
+  /* ============================================
+     FOLD GUIDES (screen only)
+     ============================================ */
+  .fold-guide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: 1px dashed rgba(104, 106, 71, 0.25);
+    z-index: 10;
+  }
+  .fold-guide-1 { left: var(--panel-width); }
+  .fold-guide-2 { left: calc(var(--panel-width) + var(--panel-fold)); }
+
+  @media print {
+    .fold-guide { display: none; }
+  }
+
+  /* ============================================
+     OUTSIDE - PAGE 1
+     Back (phases) | Inside Flap (messaging) | Front Cover
+     ============================================ */
+
+  /* --- Panel 1: Back - Phase Cards --- */
+  .back-panel {
+    background-color: var(--cream);
+    justify-content: center;
+    align-items: center;
+    padding: 0.6in 0.35in;
+    gap: 0.25in;
+  }
+
+  .phase-card {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.3in 0.28in;
+    text-align: center;
+  }
+
+  .phase-card.gather {
+    background-color: var(--golden);
+  }
+  .phase-card.align {
+    background-color: var(--olive);
+  }
+  .phase-card.flourish {
+    background-color: var(--brick-red);
+  }
+
+  .phase-card .phase-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 9pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-bottom: 0.06in;
+  }
+
+  .phase-card.gather .phase-label,
+  .phase-card.align .phase-label {
+    color: rgba(255,255,255,0.7);
+  }
+  .phase-card.flourish .phase-label {
+    color: rgba(255,255,255,0.7);
+  }
+
+  .phase-card .phase-name {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 18pt;
+    margin-bottom: 0.1in;
+  }
+
+  .phase-card.gather .phase-name,
+  .phase-card.align .phase-name {
+    color: var(--cream);
+  }
+  .phase-card.flourish .phase-name {
+    color: var(--cream);
+  }
+
+  .phase-card .phase-desc {
+    font-size: 12pt;
+    line-height: 1.55;
+  }
+
+  .phase-card.gather .phase-desc,
+  .phase-card.align .phase-desc {
+    color: rgba(253, 250, 245, 0.85);
+  }
+  .phase-card.flourish .phase-desc {
+    color: rgba(253, 250, 245, 0.85);
+  }
+
+  /* --- Panel 2: Inside Flap (fold-in, narrower) --- */
+  .inside-flap {
+    width: var(--panel-fold);
+    background-color: var(--olive);
+    justify-content: center;
+    padding: 0.55in 0.4in;
+  }
+
+  .inside-flap h2 {
+    font-size: 20pt;
+    color: var(--cream);
+    margin-bottom: 0.35in;
+    line-height: 1.35;
+  }
+
+  .inside-flap .editorial-line {
+    width: 1.2in;
+    height: 1px;
+    background: rgba(253, 250, 245, 0.2);
+    margin: 0 0 0.3in 0;
+  }
+
+  .inside-flap p {
+    color: var(--sage);
+    font-size: 12pt;
+    line-height: 1.7;
+    margin-bottom: 0.15in;
+  }
+
+  .flap-cta {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 0.35in;
+  }
+
+  .flap-cta .cta-label {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--sage);
+    margin-bottom: 0.2in;
+  }
+
+  .flap-social {
+    font-size: 10pt;
+    color: var(--sage);
+    opacity: 0.7;
+    line-height: 1.7;
+  }
+
+  .ig-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4pt;
+    margin-top: 2pt;
+  }
+
+  .ig-icon {
+    width: 11pt;
+    height: 11pt;
+    flex-shrink: 0;
+  }
+
+  /* --- Panel 3: Front Cover --- */
+  .front-cover {
+    background-color: var(--cream);
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .front-cover .cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+
+  .front-cover .cover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    padding: 0.4in 0.35in 0.4in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cream);
+  }
+
+  .cover-practice {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 11pt;
+    color: var(--olive);
+    opacity: 0.7;
+    margin-bottom: 0.25in;
+    letter-spacing: 0.03em;
+  }
+
+  .front-cover h1 {
+    font-size: 32pt;
+    line-height: 1.15;
+    margin-bottom: 0.2in;
+  }
+
+  .cover-subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--near-black);
+    opacity: 0.6;
+    margin-bottom: 0.35in;
+    line-height: 1.6;
+  }
+
+  .cover-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--olive);
+  }
+
+  .front-cover .logo {
+    width: 1.5in;
+    margin-bottom: 0.15in;
+  }
+
+  /* ============================================
+     INSIDE - PAGE 2
+     Bio | What's Included | Labs + Extras (photo bg)
+     ============================================ */
+
+  /* --- Panel 4: Bio + Headshot --- */
+  .bio-panel {
+    background-color: var(--cream);
+    padding: 0.5in 0.35in;
+    justify-content: center;
+  }
+
+  .bio-panel h2 {
+    font-size: 20pt;
+    line-height: 1.3;
+    margin-bottom: 0.25in;
+  }
+
+  .headshot {
+    width: 1.4in;
+    height: 1.7in;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 8px;
+    margin-bottom: 0.3in;
+  }
+
+  .bio-panel p {
+    font-size: 12pt;
+    line-height: 1.5;
+    margin-bottom: 0.12in;
+  }
+
+  .bio-testimonial {
+    margin-top: auto;
+    padding-top: 0.25in;
+    border-top: 1px solid rgba(39, 38, 38, 0.1);
+  }
+
+  .bio-testimonial .testimonial-quote {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 12pt;
+    line-height: 1.45;
+    color: var(--olive);
+    font-style: italic;
+    margin-bottom: 0.08in;
+  }
+
+  .bio-testimonial .testimonial-cite {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+    color: var(--olive);
+    opacity: 0.7;
+  }
+
+  /* --- Panels 5+6: Photo Spread (spanning two panels) --- */
+  .photo-spread {
+    width: calc(var(--panel-fold) + var(--panel-width));
+    height: var(--panel-height);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .spread-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .spread-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 250, 245, 0.35);
+  }
+
+  .spread-columns {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .spread-col {
+    width: var(--panel-width);
+    height: 100%;
+    padding: 0.4in 0.3in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Frosted cards (shared) */
+  .frosted-card {
+    background: rgba(253, 250, 245, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 0.2in 0.22in;
+  }
+
+  /* --- Left column: What's Included (fold-in panel) --- */
+  .spread-col-left {
+    width: var(--panel-fold);
+    gap: 0.12in;
+  }
+
+  .included-header {
+    background: rgba(253, 250, 245, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 0.18in 0.22in 0.12in;
+  }
+
+  .included-header h2 {
+    font-size: 22pt;
+    margin-bottom: 0;
+  }
+
+  .visit-title {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 13pt;
+    color: var(--olive);
+    margin-bottom: 0.03in;
+  }
+
+  .visit-duration {
+    font-family: 'Nunito', sans-serif;
+    font-size: 9pt;
+    font-weight: 500;
+    color: var(--burnt-orange);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.06in;
+  }
+
+  .visit-desc {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: var(--near-black);
+    opacity: 0.85;
+  }
+
+  .acupuncture-note {
+    background: rgba(253, 250, 245, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 0.2in 0.22in;
+  }
+
+  .acupuncture-note .visit-title {
+    margin-bottom: 0.03in;
+  }
+
+  .acupuncture-note .visit-desc {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: var(--near-black);
+    opacity: 0.85;
+  }
+
+  /* --- Right column: Labs + Extras --- */
+  .spread-col-right {
+    gap: 0.15in;
+    justify-content: flex-start;
+    padding-top: 1.09in;
+  }
+
+  .frosted-card h3 {
+    font-size: 14pt;
+    color: var(--olive);
+    margin-bottom: 0.06in;
+  }
+
+  .frosted-card p {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: var(--near-black);
+  }
+
+  .lab-list {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    font-weight: 400;
+    color: var(--near-black);
+    line-height: 1.5;
+    margin-top: 0.05in;
+    opacity: 0.8;
+  }
+
+  .lab-note {
+    font-size: 9pt;
+    font-style: italic;
+    color: var(--near-black);
+    opacity: 0.6;
+    margin-top: 0.03in;
+  }
+
+  .plus-heading {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 16pt;
+    color: var(--olive);
+    margin-bottom: 0.06in;
+  }
+
+  .plus-item {
+    margin-bottom: 0.05in;
+  }
+
+  .plus-item-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 11pt;
+    color: var(--olive);
+  }
+
+  .plus-item-desc {
+    font-size: 10pt;
+    color: var(--near-black);
+    opacity: 0.75;
+    line-height: 1.35;
+  }
+
+  /* ============================================
+     SCREEN PREVIEW
+     ============================================ */
+  @media screen {
+    body {
+      background: #e8e8e8;
+      padding: 0.5in;
+    }
+    .page {
+      background: white;
+      margin-bottom: 0.5in;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    .page-label {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.7rem;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.15in;
+      display: block;
+    }
+  }
+
+  @media print {
+    .page-label { display: none; }
+    body { background: none; padding: 0; }
+    .frosted-card,
+    .included-header,
+    .acupuncture-note {
+      background: #FDFAF5;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================================================
+     PAGE 1: OUTSIDE (printed face-down)
+     Left = Back (Phases) | Center = Inside Flap | Right = Front Cover
+     ================================================ -->
+<span class="page-label">Outside (print face down)</span>
+<div class="page">
+  <div class="fold-guide fold-guide-1"></div>
+  <div class="fold-guide fold-guide-2"></div>
+
+  <!-- Panel 1: Back - Phase Cards -->
+  <div class="panel back-panel">
+    <div class="phase-card gather">
+      <div class="phase-label">Phase 1</div>
+      <div class="phase-name">Gather</div>
+      <div class="phase-desc">Comprehensive health review, intentional goal setting, and foundational lab assessment</div>
+    </div>
+
+    <div class="phase-card align">
+      <div class="phase-label">Phase 2</div>
+      <div class="phase-name">Align</div>
+      <div class="phase-desc">Design and implement a personalized care plan that honors your body's rhythms</div>
+    </div>
+
+    <div class="phase-card flourish">
+      <div class="phase-label">Phase 3</div>
+      <div class="phase-name">Flourish</div>
+      <div class="phase-desc">Build lasting habits and thrive with a foundation for lifelong vitality</div>
+    </div>
+  </div>
+
+  <!-- Panel 2: Inside Flap -->
+  <div class="panel inside-flap">
+    <h2>Your symptoms aren't random. They're messengers.</h2>
+    <div class="editorial-line"></div>
+    <p>
+      You've probably felt like you needed to fix everything at once. It doesn't work because the body isn't a collection of separate problems. It's a connected system.
+    </p>
+    <p>
+      You don't need to do more. You need to know where to begin. That's the shift: from chasing symptoms to understanding what your body is telling you.
+    </p>
+
+    <div class="flap-cta">
+      <div class="cta-label">Learn More</div>
+      <img src="qr-elemental-health.png" alt="QR code to drkatymorrison.com/elemental-health" style="width: 0.9in; height: 0.9in; border-radius: 8px; margin: 0 auto 0.2in; display: block;">
+      <div class="flap-social">
+        <div class="ig-line">
+          <svg class="ig-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+            <ellipse cx="12" cy="12" rx="4" ry="10" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <span>drkatymorrison.com</span>
+        </div>
+        <div class="ig-line">
+          <svg class="ig-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+          </svg>
+          <span>@dr.katymorrison</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel 3: Front Cover -->
+  <div class="panel front-cover">
+    <img src="../images/midcoast-health-collective-4-5.webp" alt="Maine coastline" class="cover-image">
+    <div class="cover-content">
+      <span class="cover-practice">Midcoast Health Collective</span>
+      <h1>Elemental<br>Health</h1>
+      <span class="cover-subtitle">A 4-Month Comprehensive<br>Care Program</span>
+      <img src="../images/logos/logo.png" alt="Dr. Katy Morrison" class="logo">
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     PAGE 2: INSIDE (printed face-up)
+     Left = Bio | Center = What's Included | Right = Labs + Extras
+     ================================================ -->
+<span class="page-label">Inside (print face up)</span>
+<div class="page">
+  <div class="fold-guide fold-guide-1"></div>
+  <div class="fold-guide fold-guide-2"></div>
+
+  <!-- Panel 4: Bio + Headshot -->
+  <div class="panel bio-panel">
+    <h2>Rooted in Tradition,<br>Guided by Science</h2>
+    <img src="../images/midcoast-health-collective-4-50.webp" alt="Dr. Katy Morrison" class="headshot">
+    <p>
+      As one of the few practitioners dually trained in naturopathic medicine and acupuncture, Dr. Katy blends the best of modern science and traditional wisdom.
+    </p>
+    <p>
+      Her approach is deeply integrative: supporting your body's inherent capacity to heal with natural therapies wherever possible, and using conventional tools when needed. Every recommendation honors your body's rhythms and your current season of life.
+    </p>
+
+    <div class="bio-testimonial">
+      <p class="testimonial-quote">
+        "She takes it step by step, starting with the most simple solution first. I have been able to make huge progress on a difficult health condition with her support."
+      </p>
+      <span class="testimonial-cite">— R.S.</span>
+    </div>
+  </div>
+
+  <!-- Panels 5+6: Photo Spread -->
+  <div class="photo-spread">
+    <img src="../images/midcoast-health-session-I-38.webp" alt="Midcoast Health Collective" class="spread-bg">
+    <div class="spread-overlay"></div>
+    <div class="spread-columns">
+
+      <!-- Left column: What's Included -->
+      <div class="spread-col spread-col-left">
+        <div class="included-header">
+          <span class="eyebrow" style="font-size: 8pt;">Your Care</span>
+          <h2>What's Included</h2>
+        </div>
+
+        <div class="frosted-card">
+          <div class="visit-title">Initial Visit</div>
+          <div class="visit-duration">90 minutes</div>
+          <div class="visit-desc">A thoughtful review of your health, history, and goals. We identify the labs that offer the most insight, then close with a grounding acupuncture session.</div>
+        </div>
+
+        <div class="frosted-card">
+          <div class="visit-title">Three Follow-Up Visits</div>
+          <div class="visit-duration">60 minutes each</div>
+          <div class="visit-desc">Each session is devoted to your progress and refining your plan. Tailored guidance on lifestyle, nutrition, movement, and supplements.</div>
+        </div>
+
+        <div class="acupuncture-note">
+          <div class="visit-title">Acupuncture at Every Visit</div>
+          <div class="visit-desc">Included at every in-person visit to support balance and your nervous system.</div>
+        </div>
+      </div>
+
+      <!-- Right column: Labs + Extras -->
+      <div class="spread-col spread-col-right">
+        <div class="frosted-card">
+          <div class="visit-title">Personalized Care Plan</div>
+          <div class="visit-desc">Built for your body and your life. We track how your body responds and adjust together as we go.</div>
+        </div>
+
+        <div class="frosted-card">
+          <h3>Comprehensive Lab Panel</h3>
+          <p>Your first round of essential labs, including all draw fees, is part of your investment.</p>
+          <div class="lab-list">
+            CBC-D, CMP, Lipid Panel, TSH, FT4, FT3, Vitamin B12/Folate, Vitamin D, Iron Panel
+          </div>
+          <div class="lab-note">*If additional lab work is needed, you'll receive clear pricing in advance.</div>
+        </div>
+
+        <div class="frosted-card">
+          <div class="plus-heading">plus...</div>
+          <div class="plus-item">
+            <div class="plus-item-title">Direct messaging with Dr. Katy</div>
+            <div class="plus-item-desc">Support and guidance between visits</div>
+          </div>
+          <div class="plus-item">
+            <div class="plus-item-title">15% off supplements</div>
+            <div class="plus-item-desc">Professional-grade products recommended for your care</div>
+          </div>
+          <div class="plus-item">
+            <div class="plus-item-title">Ongoing care options</div>
+            <div class="plus-item-desc">Flexible ways to continue after your program</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

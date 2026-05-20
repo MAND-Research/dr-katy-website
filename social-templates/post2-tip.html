@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Bold.ttf') format('truetype');
+    font-weight: 700;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: #FDFAF5;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+  }
+
+  .top-bar {
+    background: #686A47;
+    padding: 56px 80px;
+  }
+
+  .eyebrow {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #D6DAC8;
+    margin-bottom: 20px;
+  }
+
+  .headline {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 48px;
+    line-height: 1.25;
+    color: #FDFAF5;
+  }
+
+  .content {
+    padding: 64px 80px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tip-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    margin-bottom: 44px;
+  }
+
+  .tip-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .tip-number {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 40px;
+    color: #AB5818;
+    line-height: 1;
+    min-width: 44px;
+  }
+
+  .tip-text {
+    flex: 1;
+  }
+
+  .tip-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #272626;
+    margin-bottom: 8px;
+  }
+
+  .tip-desc {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.55;
+    color: rgba(39, 38, 38, 0.75);
+  }
+
+  .bottom-bar {
+    background: #D6DAC8;
+    padding: 32px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #686A47;
+    letter-spacing: 0.02em;
+  }
+
+  .website {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(104, 106, 71, 0.7);
+  }
+</style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="eyebrow">Lab testing</div>
+    <div class="headline">What your labs aren't telling you</div>
+  </div>
+
+  <div class="content">
+    <div class="tip-item">
+      <div class="tip-number">1</div>
+      <div class="tip-text">
+        <div class="tip-title">Reference ranges aren't optimal ranges</div>
+        <div class="tip-desc">Standard lab ranges include the middle 95% of people tested, including those who are unwell.</div>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-number">2</div>
+      <div class="tip-text">
+        <div class="tip-title">Context changes everything</div>
+        <div class="tip-desc">The same result can mean different things depending on your symptoms, history, and other markers.</div>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-number">3</div>
+      <div class="tip-text">
+        <div class="tip-title">Trends matter more than snapshots</div>
+        <div class="tip-desc">A single test is a moment in time. Patterns across tests reveal the real story.</div>
+      </div>
+    </div>
+
+    <div class="tip-item">
+      <div class="tip-number">4</div>
+      <div class="tip-text">
+        <div class="tip-title">Normal doesn't mean nothing is wrong</div>
+        <div class="tip-desc">"Normal labs" with persistent symptoms is a signal, not a dismissal.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="brand">Dr. Katy Morrison, ND, LAc</div>
+    <div class="website">drkatymorrison.com</div>
+  </div>
+</body>
+</html>

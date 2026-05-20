@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elemental Care - Rack Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* ============================================
+     FONTS
+     ============================================ */
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  /* ============================================
+     COLORS & VARIABLES
+     ============================================ */
+  :root {
+    --cream: #FDFAF5;
+    --olive: #686A47;
+    --sage: #D6DAC8;
+    --burnt-orange: #AB5818;
+    --near-black: #272626;
+    --card-width: 4in;
+    --card-height: 9in;
+  }
+
+  /* ============================================
+     PRINT SETUP
+     ============================================ */
+  @page {
+    size: 4in 9in;
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Nunito', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    color: var(--near-black);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ============================================
+     CARD STRUCTURE
+     ============================================ */
+  .card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  /* ============================================
+     TYPOGRAPHY
+     ============================================ */
+  .eyebrow {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--burnt-orange);
+    margin-bottom: 5pt;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--olive);
+  }
+
+  h1 {
+    font-size: 30pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-bottom: 6pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+    margin-bottom: 3pt;
+  }
+
+  p {
+    font-size: 12pt;
+    line-height: 1.6;
+  }
+
+  /* ============================================
+     FRONT SIDE
+     ============================================ */
+  .card-front {
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  /* Top image area */
+  .front-image {
+    width: 100%;
+    height: 2.8in;
+    object-fit: cover;
+    object-position: center 60%;
+  }
+
+  .front-content {
+    flex: 1;
+    padding: 0.4in 0.35in 0.45in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .front-content .logo {
+    width: 1.8in;
+    margin-bottom: 0.3in;
+  }
+
+  .front-content h1 {
+    margin-bottom: 0.25in;
+  }
+
+  .front-content .intro {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: var(--near-black);
+    margin-bottom: 0.3in;
+    max-width: 3in;
+  }
+
+  /* Benefits */
+  .benefits {
+    width: 100%;
+    text-align: left;
+  }
+
+  .benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.15in;
+    margin-bottom: 0.18in;
+    padding-bottom: 0.18in;
+    border-bottom: 1px solid rgba(39, 38, 38, 0.08);
+  }
+
+  .benefit:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .benefit-icon {
+    flex-shrink: 0;
+    margin-top: 0.06in;
+  }
+
+  .benefit-text {
+    flex: 1;
+  }
+
+  .benefit-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+    color: var(--olive);
+    margin-bottom: 0.02in;
+  }
+
+  .benefit-desc {
+    font-size: 10pt;
+    line-height: 1.45;
+    color: var(--near-black);
+    opacity: 0.75;
+  }
+
+  /* ============================================
+     BACK SIDE
+     ============================================ */
+  .card-back {
+    background-color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.35in 0.35in 0.3in;
+  }
+
+  /* Value Stack */
+  .value-stack {
+    margin-bottom: 0.25in;
+  }
+
+  .value-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.12in;
+    padding: 0.06in 0;
+  }
+
+  .check-icon {
+    flex-shrink: 0;
+    width: 10pt;
+    height: 10pt;
+    position: relative;
+    top: 1pt;
+  }
+
+  .value-item span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 11pt;
+    font-weight: 400;
+    color: var(--near-black);
+  }
+
+  .pricing-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(104, 106, 71, 0.2);
+    margin: 0.15in 0;
+  }
+
+  /* Combined value + pricing box */
+  .pricing-section {
+    background-color: var(--sage);
+    border-radius: 8px;
+    padding: 0.25in 0.3in;
+    text-align: center;
+    margin-bottom: 0.2in;
+  }
+
+  .pricing-section .eyebrow {
+    color: var(--olive);
+    margin-bottom: 0.06in;
+  }
+
+  .pricing-section h2 {
+    margin-bottom: 0.12in;
+  }
+
+  .pricing-section .value-stack {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .price-main {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 22pt;
+    color: var(--olive);
+    margin-bottom: 0.05in;
+  }
+
+  .price-detail {
+    font-size: 12pt;
+    color: var(--olive);
+    opacity: 0.8;
+  }
+
+  /* Testimonial */
+  .testimonial-section {
+    text-align: center;
+    margin-bottom: 0.2in;
+    padding-bottom: 0.2in;
+    border-bottom: 1px solid rgba(39, 38, 38, 0.1);
+  }
+
+  .testimonial-quote {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 12pt;
+    line-height: 1.45;
+    color: var(--olive);
+    font-style: italic;
+    margin-bottom: 0.1in;
+  }
+
+  .testimonial-cite {
+    font-family: 'Nunito', sans-serif;
+    font-size: 9pt;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--olive);
+    opacity: 0.75;
+  }
+
+  /* Contact footer */
+  .contact-footer {
+    text-align: center;
+    padding-top: 0.2in;
+  }
+
+  .contact-footer p {
+    font-size: 12pt;
+    line-height: 1.7;
+    color: var(--olive);
+  }
+
+  .contact-footer .url {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    color: var(--olive);
+    margin-top: 0.08in;
+    margin-bottom: 0.15in;
+  }
+
+  /* ============================================
+     SCREEN PREVIEW
+     ============================================ */
+  @media screen {
+    body {
+      background: #e8e8e8;
+      padding: 0.5in;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5in;
+      justify-content: center;
+    }
+
+    .card {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+
+    .card-label {
+      font-family: 'Nunito', sans-serif;
+      font-size: 12pt;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: center;
+      margin-bottom: 0.15in;
+      display: block;
+      width: var(--card-width);
+    }
+
+    .card-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media print {
+    .card-label { display: none; }
+    .card-wrapper { display: contents; }
+
+    body {
+      background: none;
+      padding: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ================================================
+     FRONT
+     ================================================ -->
+<div class="card-wrapper">
+  <span class="card-label">Front</span>
+  <div class="card card-front">
+    <img src="../images/midcoast-health-collective-4-101.webp" alt="Maine coastline at sunset" class="front-image">
+
+    <div class="front-content">
+      <img src="../images/logos/logo.png" alt="Dr. Katy Morrison" class="logo">
+      <span class="eyebrow">For Established Patients</span>
+      <h1>Elemental Care</h1>
+      <p class="intro">
+        Ongoing care with a doctor who already knows your story. Regular access, consistent support, and less friction between visits.
+      </p>
+
+      <div class="benefits">
+        <div class="benefit">
+          <svg class="benefit-icon" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="#AB5818"/></svg>
+          <div class="benefit-text">
+            <div class="benefit-title">A doctor, not just appointments</div>
+            <div class="benefit-desc">Someone who knows your full picture</div>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <svg class="benefit-icon" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="#AB5818"/></svg>
+          <div class="benefit-text">
+            <div class="benefit-title">Proactive beats reactive</div>
+            <div class="benefit-desc">Regular touchpoints catch patterns early</div>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <svg class="benefit-icon" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="4" fill="#AB5818"/></svg>
+          <div class="benefit-text">
+            <div class="benefit-title">Less friction</div>
+            <div class="benefit-desc">Quick answers when questions come up</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     BACK
+     ================================================ -->
+<div class="card-wrapper">
+  <span class="card-label">Back</span>
+  <div class="card card-back">
+    <!-- Testimonial -->
+    <div class="testimonial-section">
+      <p class="testimonial-quote">
+        "Dr. Katy and I are able to connect more subtly and intuitively. We have become a real team. I feel lucky and blessed to have her as my health practitioner." <span class="testimonial-cite">— S.S.</span>
+      </p>
+    </div>
+
+    <!-- What's Included + Pricing -->
+    <div class="pricing-section">
+      <span class="eyebrow">A Year of Care</span>
+      <h2>What's Included</h2>
+      <div class="value-stack">
+        <div class="value-item">
+          <svg class="check-icon" viewBox="0 0 12 12"><path d="M2 6.5L4.5 9L10 3" stroke="#686A47" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Up to 8 visits over 12 months</span>
+        </div>
+        <div class="value-item">
+          <svg class="check-icon" viewBox="0 0 12 12"><path d="M2 6.5L4.5 9L10 3" stroke="#686A47" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Naturopathic, acupuncture, or both</span>
+        </div>
+        <div class="value-item">
+          <svg class="check-icon" viewBox="0 0 12 12"><path d="M2 6.5L4.5 9L10 3" stroke="#686A47" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Annual comprehensive lab panel</span>
+        </div>
+        <div class="value-item">
+          <svg class="check-icon" viewBox="0 0 12 12"><path d="M2 6.5L4.5 9L10 3" stroke="#686A47" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Direct messaging between visits</span>
+        </div>
+        <div class="value-item">
+          <svg class="check-icon" viewBox="0 0 12 12"><path d="M2 6.5L4.5 9L10 3" stroke="#686A47" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>15% off supplements</span>
+        </div>
+        <div class="value-item">
+          <svg class="check-icon" viewBox="0 0 12 12"><path d="M2 6.5L4.5 9L10 3" stroke="#686A47" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Discounted additional visits as needed</span>
+        </div>
+        <div class="value-item">
+          <svg class="check-icon" viewBox="0 0 12 12"><path d="M2 6.5L4.5 9L10 3" stroke="#686A47" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Administrative support</span>
+        </div>
+      </div>
+      <div class="pricing-divider"></div>
+      <div class="price-main">$250/month</div>
+      <div class="price-detail">12-month commitment</div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-footer">
+      <img src="qr-elemental-care.png" alt="QR code to drkatymorrison.com/elemental-care" style="width: 0.65in; height: 0.65in; border-radius: 6px; margin: 0 auto 0.1in; display: block;">
+      <p class="url">drkatymorrison.com/elemental-care</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

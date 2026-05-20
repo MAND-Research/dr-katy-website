@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  @font-face {
+    font-family: 'Cooper BT';
+    src: url('../fonts/Cooper BT/Cooper BT Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1080px;
+    height: 1350px;
+    background: #FDFAF5;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .header {
+    padding: 80px 90px 60px;
+  }
+
+  .eyebrow {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #AB5818;
+    margin-bottom: 24px;
+  }
+
+  .headline {
+    font-family: 'Cooper BT', Georgia, serif;
+    font-size: 50px;
+    line-height: 1.25;
+    color: #272626;
+  }
+
+  .list {
+    flex: 1;
+    padding: 0 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .list-item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 32px 0;
+    border-bottom: 1px solid rgba(39, 38, 38, 0.1);
+  }
+
+  .list-item:first-child {
+    border-top: 1px solid rgba(39, 38, 38, 0.1);
+  }
+
+  .check {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #686A47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .check svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .list-text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.4;
+    color: #272626;
+  }
+
+  .accent {
+    color: #AB5818;
+  }
+
+  .footer {
+    padding: 48px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #686A47;
+  }
+
+  .cta-pill {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: #686A47;
+    background: #D6DAC8;
+    padding: 14px 32px;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="eyebrow">Elemental Health</div>
+    <div class="headline">What a deep-dive into your health <span class="accent">actually</span> looks like</div>
+  </div>
+
+  <div class="list">
+    <div class="list-item">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FDFAF5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="list-text">Comprehensive lab work beyond the standard panel</div>
+    </div>
+
+    <div class="list-item">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FDFAF5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="list-text">90-minute intake to understand your full picture</div>
+    </div>
+
+    <div class="list-item">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FDFAF5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="list-text">A treatment plan built around your life</div>
+    </div>
+
+    <div class="list-item">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FDFAF5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="list-text">Follow-ups to adjust as your body responds</div>
+    </div>
+
+    <div class="list-item">
+      <div class="check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FDFAF5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="list-text">A provider who actually reads the full story</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="brand">Dr. Katy Morrison, ND, LAc</div>
+    <div class="cta-pill">Learn more</div>
+  </div>
+</body>
+</html>
