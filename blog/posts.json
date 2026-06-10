@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "it-may-not-have-begun-there",
+      "title": "It May Not Have Begun There",
+      "date": "2026-06-10",
+      "category": "natural-medicine",
+      "categoryLabel": "Natural Medicine",
+      "excerpt": "A naturopathic doctor on why a symptom rarely starts where it first appears, and why the search for a single cause can get in the way of care.",
+      "image": "images/blog/aleksandra-boguslawska-MS7KD9Ti7FQ-unsplash.webp",
+      "imageAlt": "Wooden boardwalk path through coastal grass leading to the sea"
+    },
+    {
       "slug": "blending-naturopathic-and-chinese-medicine-a-truly-integrative-approach-to-health",
       "title": "Blending Naturopathic and Chinese Medicine: A Truly Integrative Approach to Health",
       "date": "2023-11-15",
